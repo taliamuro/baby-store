@@ -4,7 +4,7 @@ nav ul li {
 
 #nav-bar {
     text-align: center;
-    margin: 50px 50px;
+    margin: 50px;
 }
 
 li {
@@ -41,7 +41,7 @@ li {
 }
 
 footer {
-    margin: 50px 50px;
+    margin: 50px;
 }
 
 .footer-item {
@@ -102,4 +102,29 @@ footer {
 
 .amount {
     text-align: right;
+}
+
+#order-confirmation {
+    margin: 50px;
+}
+
+.billing-info {
+    text-align: left;
+    padding: 5px 15px 5px 0px;
+}
+
+#order-confirmation {
+    display: inline-flex;
+    border: 1px solid black;
+    margin: 50px;
+}
+
+#confirmation-message {
+    margin: 50px;
+}
+
+#summary-message {
+    margin: 50px 100px;
+    background-color: rgb(224, 224, 224);
+    padding: 50px;
 }
