@@ -4,8 +4,45 @@ nav ul li {
 
 #nav-bar {
     text-align: center;
+    margin: 50px 50px;
 }
 
 li {
     margin: 0px 20px;
+}
+
+.nav-button {
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+#search-bar {
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+#about-us {
+    margin: 50px 100px;
+}
+
+footer {
+    margin: 50px 50px;
+}
+
+.footer-item {
+    padding: 10px 50px;
+    text-align: left;
+}
+
+#featured-products {
+    border-radius: 8px;
+    border: 1px solid black;
+    margin: 50px 100px;
+}
+
+.featured-items {
+    padding: 2px;
+    margin: 2px;
 }
