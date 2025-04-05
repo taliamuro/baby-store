@@ -16,6 +16,19 @@ li {
     padding: 8px;
     border-radius: 8px;
     border: 1px solid black;
+    color: black;
+}
+
+.nav-button:hover {
+    background-color: #dfdfdf;
+}
+
+#current-page {
+    background-color: #dfdfdf;
+}
+
+#current-page:hover {
+    background-color: white;
 }
 
 #search-bar {
@@ -48,4 +61,45 @@ footer {
 .featured-items {
     padding: 2px;
     margin: 2px;
+}
+
+#cart-page-content {
+    margin: 50px 50px;
+}
+
+.cart-items {
+    display: inline-flex;
+}
+
+.cart-description {
+    text-align: left;
+    padding: 50px;
+}
+
+#search-bar {
+    padding: 8px;
+}
+
+.quantity {
+    height: 20px;
+    text-align: center;
+}
+
+.cart-quantity {
+    display: inline-flex;
+    padding: 50px;
+}
+
+#order-summary {
+    border: 1px solid black;
+    padding: 50px;
+}
+
+.amount-descr {
+    text-align: left;
+    padding: 0px 100px 0px 0px;
+}
+
+.amount {
+    text-align: right;
 }
