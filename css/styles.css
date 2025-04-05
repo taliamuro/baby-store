@@ -36,9 +36,12 @@ footer {
     text-align: left;
 }
 
-#featured-products {
+#featured-images {
     border-radius: 8px;
     border: 1px solid black;
+}
+
+#featured-products {
     margin: 50px 100px;
 }
 
