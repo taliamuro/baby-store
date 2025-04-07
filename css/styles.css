@@ -130,3 +130,25 @@ footer {
     background-color: rgb(224, 224, 224);
     padding: 50px;
 }
+
+.login {
+    margin: 50px 100px;
+    border: 1px solid black;
+    padding: 20px 50px;
+}
+
+.login form table tr th {
+    padding: 0px 10px;
+}
+
+.login-label {
+    text-align: left;
+}
+
+.sign-up-button {
+    text-align: right;
+}
+
+#create-account-login {
+    display: flex;
+}

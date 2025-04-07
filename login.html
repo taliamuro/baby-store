@@ -26,6 +26,101 @@
         <hr>
     </div>
 
+    <div id="create-account-login">
+        <!-- Create an account section -->
+        <div class="login">
+            <h3>Create Account</h3>
+            <hr>
+            <form action="server-endpoint" method="POST">
+                <table>
+                    <tr>
+                        <th class="login-label">
+                            <label for="username">Username</label>
+                        </th>
+                        <th>
+                            <input type="text" name="username" id="username" required>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th class="login-label">
+                            <label for="first-name">First Name</label>
+                        </th>
+                        <th>
+                            <input type="text" name="first-name" id="first-name">
+                        </th>
+                    </tr>
+                    <tr>
+                        <th class="login-label">
+                            <label for="last-name">Last Name</label>                            
+                        </th>
+                        <th>
+                            <input type="text" name="last-name" id="last-name">
+                        </th>
+                    </tr>
+                    <tr>
+                        <th class="login-label">
+                            <label for="birthday">Birthday</label>
+                        </th>
+                        <th>
+                            <input type="date" name="birthday" id="birthday">
+                        </th>
+                    </tr>
+                    <tr>
+                        <th class="login-label">
+                            <label for="password">Password</label>
+                        </th>
+                        <th>
+                            <input type="password" name="password" id="password">
+                        </th>
+                    </tr>
+                    <tr>
+                        <th class="login-label">
+                            <label for="confirm-password">Confirm Password</label>
+                        </th>
+                        <th>
+                            <input type="password" name="confirm-password" id="confirm-password">
+                        </th>
+                    </tr>
+                    <tr>
+                        <th colspan="2" class="sign-up-button">
+                            <input type="button" value="Sign Up">
+                        </th>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <!-- Login section -->
+        <div class="login">
+            <h3>Login</h3>
+            <hr>
+            <form action="server-endpoint" method="POST">
+                <table>
+                    <tr>
+                        <th class="login-label">
+                            <label for="username">Username</label>
+                        </th>
+                        <th>
+                            <input type="text" name="username" id="username">
+                        </th>
+                    </tr>
+                    <tr>
+                        <th id="login-label">
+                            <label for="password">Password</label>
+                        </th>
+                        <th>
+                            <input type="password" name="password" id="password">
+                        </th>
+                    </tr>
+                    <tr>
+                        <th colspan="2" class="sign-up-button">
+                            <input type="button" value="Login">
+                        </th>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+
     <!-- Footer with links -->
     <footer>
         <hr>
