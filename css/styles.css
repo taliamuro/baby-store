@@ -152,3 +152,25 @@ footer {
 #create-account-login {
     display: flex;
 }
+
+/*Contact Us Page Begin*/
+#opening-hours-label, #opening-hours-table {
+    display: inline;
+}
+#opening-hours-label {
+    margin-right: 10px;
+}
+/* #opening-hours-table {
+    border: 1px solid;
+} */
+#client-form{
+    /* display: flex; */
+    padding: 1%;
+    width: 60%;
+    border: 1px solid;
+}
+
+iframe{
+    width: 70%;    
+}
+/*Contact Us Page End*/
