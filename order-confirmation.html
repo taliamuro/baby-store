@@ -13,20 +13,19 @@
     
     <!-- Navigation Bar -->
     <div id="nav-bar">
-        <nav>
+        <nav id="nav">
             <ul>
                 <li><a href="home.html" class="nav-button">Home</a></li>
                 <li><a href="contact.html" class="nav-button">Contact</a></li>
                 <li><a href="product-listing.html" class="nav-button">Products</a></li>
-                <li><form><input type="text" name="search-bar" id="search-bar" placeholder="&#128270;"></form></li>
+                <li><form><input type="search" name="search-bar" id="search-bar" placeholder="&#128270;"></form></li>
                 <li><a href="cart.html"><img src="images/cart.svg" alt="Shopping Cart"></a></li>
                 <li><a href="login.html"><img src="images/person-circle.svg" alt="Login"></a></li>
             </ul>
         </nav>
-        <hr>
     </div>
 
-    <div id="order-confirmation">
+    <div id="order-confirmation" class="page-content">
         <div id="confirmation-message">
             <h1>Thank you for your purchase!</h1>
             <p>Your order has been placed and will be processed within 1-2 business days.</p>
@@ -35,19 +34,19 @@
             <table>
                 <tr>
                     <th class="billing-info">Name</th>
-                    <th class="billing-info">Jane Smith</th>
+                    <td class="billing-info">Jane Smith</td>
                 </tr>
                 <tr>
                     <th class="billing-info">Address</th>
-                    <th class="billing-info">123 Street</th>
+                    <td class="billing-info">123 Street</td>
                 </tr>
                 <tr>
                     <th class="billing-info">Phone</th>
-                    <th class="billing-info">(123)-456-7890</th>
+                    <td class="billing-info">(123)-456-7890</td>
                 </tr>
                 <tr>
                     <th class="billing-info">Email</th>
-                    <th class="billing-info">jane.smith@email.com</th>
+                    <td class="billing-info">jane.smith@email.com</td>
                 </tr>
             </table>
         </div>
@@ -60,34 +59,34 @@
                     <th class="billing-info">Payment Method</th>
                 </tr>
                 <tr>
-                    <th class="billing-info">01 January 2025</th>
-                    <th class="billing-info">W12345678</th>
-                    <th class="billing-info">American Express</th>
+                    <td class="billing-info">01 January 2025</td>
+                    <td class="billing-info">W12345678</td>
+                    <td class="billing-info">American Express</td>
                 </tr>
             </table>
 
             <table>
                 <tr>
-                    <th>
+                    <td>
                         <img src="https://image.hm.com/assets/hm/2c/74/2c7463c83fd3839350dabfb085c4963dc6a363ce.jpg?imwidth=1260" alt="Featured Item 1" height="125" width="75">
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         <div class="cart-description">
-                            <h3>Featured Item 1</h3>
+                            <h3><b>Featured Item 1</b></h3>
                             <p>Qty: 1</p>
                             <p>Price: $0.00</p>
                         </div>
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         <img src="https://image.hm.com/assets/hm/9b/70/9b70f3d0d0c3260c648c33a3b660f1c2179aaf10.jpg?imwidth=1260" alt="Featured Item 2" height="125" width="75">
-                    </th>
-                    <th class="cart-description">
-                        <h3>Featured Item 2</h3>
+                    </td>
+                    <td class="cart-description">
+                        <h3><b>Featured Item 2</b></h3>
                         <p>Qty: 1</p>
                         <p>Price: $0.00</p>
-                    </th>
+                    </td>
                 </tr>
             </table>
         </div>
@@ -99,14 +98,14 @@
         <br>
         <table>
             <tr>
-                <th><a href="product-listing.html" class="footer-item">Products</a></th>
-                <th><a href="contact.html" class="footer-item">Contact</a></th>
-                <th><a href="login.html" class="footer-item">Create an Account</a></th>
+                <td><a href="product-listing.html" class="footer-item">Products</a></td>
+                <td><a href="contact.html" class="footer-item">Contact</a></td>
+                <td><a href="login.html" class="footer-item">Create an Account</a></td>
             </tr>
             <tr>
-                <th class="footer-item"><a href="cart.html">Cart</a></th>
-                <th class="footer-item"><a href="home.html">About Us</a></th>
-                <th class="footer-item"><a href="login.html">Login</a></th>
+                <td class="footer-item"><a href="cart.html">Cart</a></td>
+                <td class="footer-item"><a href="home.html">About Us</a></td>
+                <td class="footer-item"><a href="login.html">Login</a></td>
             </tr>
         </table>
     </footer>

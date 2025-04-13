@@ -13,20 +13,19 @@
     
     <!-- Navigation Bar -->
     <div id="nav-bar">
-        <nav>
+        <nav id="nav">
             <ul>
                 <li><a href="home.html" class="nav-button">Home</a></li>
                 <li><a href="contact.html" class="nav-button">Contact</a></li>
                 <li><a href="product-listing.html" class="nav-button">Products</a></li>
-                <li><form><input type="text" name="search-bar" id="search-bar" placeholder="&#128270;"></form></li>
+                <li><form><input type="search" name="search-bar" id="search-bar" placeholder="&#128270;"></form></li>
                 <li><a href="cart.html"><img src="images/cart.svg" alt="Shopping Cart"></a></li>
                 <li><a href="login.html"><img src="images/person-circle.svg" alt="Login"></a></li>
             </ul>
         </nav>
-        <hr>
     </div>
 
-    <div id="create-account-login">
+    <div id="create-account-login" class="page-content">
         <!-- Create an account section -->
         <div class="login">
             <h3>Create Account</h3>
@@ -34,57 +33,57 @@
             <form action="server-endpoint" method="POST">
                 <table>
                     <tr>
-                        <th class="login-label">
+                        <td class="login-label">
                             <label for="username">Username</label>
-                        </th>
-                        <th>
+                        </td>
+                        <td>
                             <input type="text" name="username" id="username" required>
-                        </th>
+                        </td>
                     </tr>
                     <tr>
-                        <th class="login-label">
+                        <td class="login-label">
                             <label for="first-name">First Name</label>
-                        </th>
-                        <th>
+                        </td>
+                        <td>
                             <input type="text" name="first-name" id="first-name">
-                        </th>
+                        </td>
                     </tr>
                     <tr>
-                        <th class="login-label">
+                        <td class="login-label">
                             <label for="last-name">Last Name</label>                            
-                        </th>
-                        <th>
+                        </td>
+                        <td>
                             <input type="text" name="last-name" id="last-name">
-                        </th>
+                        </td>
                     </tr>
                     <tr>
-                        <th class="login-label">
-                            <label for="birthday">Birthday</label>
-                        </th>
-                        <th>
+                        <td class="login-label">
+                            <label for="birtdday">Birthday</label>
+                        </td>
+                        <td>
                             <input type="date" name="birthday" id="birthday">
-                        </th>
+                        </td>
                     </tr>
                     <tr>
-                        <th class="login-label">
+                        <td class="login-label">
                             <label for="password">Password</label>
-                        </th>
-                        <th>
+                        </td>
+                        <td>
                             <input type="password" name="password" id="password">
-                        </th>
+                        </td>
                     </tr>
                     <tr>
-                        <th class="login-label">
+                        <td class="login-label">
                             <label for="confirm-password">Confirm Password</label>
-                        </th>
-                        <th>
+                        </td>
+                        <td>
                             <input type="password" name="confirm-password" id="confirm-password">
-                        </th>
+                        </td>
                     </tr>
                     <tr>
-                        <th colspan="2" class="sign-up-button">
+                        <td colspan="2" class="sign-up-button">
                             <input type="button" value="Sign Up">
-                        </th>
+                        </td>
                     </tr>
                 </table>
             </form>
@@ -96,25 +95,25 @@
             <form action="server-endpoint" method="POST">
                 <table>
                     <tr>
-                        <th class="login-label">
+                        <td class="login-label">
                             <label for="username">Username</label>
-                        </th>
-                        <th>
+                        </td>
+                        <td>
                             <input type="text" name="username" id="username">
-                        </th>
+                        </td>
                     </tr>
                     <tr>
-                        <th id="login-label">
+                        <td id="login-label">
                             <label for="password">Password</label>
-                        </th>
-                        <th>
+                        </td>
+                        <td>
                             <input type="password" name="password" id="password">
-                        </th>
+                        </td>
                     </tr>
                     <tr>
-                        <th colspan="2" class="sign-up-button">
+                        <td colspan="2" class="sign-up-button">
                             <input type="button" value="Login">
-                        </th>
+                        </td>
                     </tr>
                 </table>
             </form>
@@ -127,14 +126,14 @@
         <br>
         <table>
             <tr>
-                <th><a href="product-listing.html" class="footer-item">Products</a></th>
-                <th><a href="contact.html" class="footer-item">Contact</a></th>
-                <th><a href="login.html" class="footer-item">Create an Account</a></th>
+                <td><a href="product-listing.html" class="footer-item">Products</a></td>
+                <td><a href="contact.html" class="footer-item">Contact</a></td>
+                <td><a href="login.html" class="footer-item">Create an Account</a></td>
             </tr>
             <tr>
-                <th class="footer-item"><a href="cart.html">Cart</a></th>
-                <th class="footer-item"><a href="home.html">About Us</a></th>
-                <th class="footer-item"><a href="login.html">Login</a></th>
+                <td class="footer-item"><a href="cart.html">Cart</a></td>
+                <td class="footer-item"><a href="home.html">About Us</a></td>
+                <td class="footer-item"><a href="login.html">Login</a></td>
             </tr>
         </table>
     </footer>

@@ -13,35 +13,33 @@
     
     <!-- Navigation Bar -->
     <div id="nav-bar">
-        <nav>
+        <nav id="nav">
             <ul>
                 <li><a href="home.html" class="nav-button">Home</a></li>
                 <li><a href="contact.html" class="nav-button">Contact</a></li>
                 <li><a href="product-listing.html" class="nav-button">Products</a></li>
-                <li><form><input type="text" name="search-bar" id="search-bar" placeholder="&#128270;"></form></li>
+                <li><form><input type="search" name="search-bar" id="search-bar" placeholder="&#128270;"></form></li>
                 <li><a href="cart.html"><img src="images/cart.svg" alt="Shopping Cart"></a></li>
                 <li><a href="login.html"><img src="images/person-circle.svg" alt="Login"></a></li>
             </ul>
         </nav>
-        <hr>
     </div>
 
-    <div id="cart-page-content">
-
+    <div id="cart-page-content" class="page-content">
         <table>
             <tr>
-                <th>
-                    <img src="https://image.hm.com/assets/hm/2c/74/2c7463c83fd3839350dabfb085c4963dc6a363ce.jpg?imwidth=1260" alt="Featured Item 1" height="220" width="145" class="featured-items">
-                </th>
-                <th>
+                <td>
+                    <img src="https://image.hm.com/assets/hm/2c/74/2c7463c83fd3839350dabfb085c4963dc6a363ce.jpg?imwidtd=1260" alt="Featured Item 1" height="220" width="145" class="featured-items">
+                </td>
+                <td>
                     <div class="cart-description">
-                        <p>Featured Item 1</p>
+                        <p><b>Featured Item 1</b></p>
                         <p>Colour</p>
                         <p>Size</p>
                         <p>Price</p>
                     </div>
-                </th>
-                <th>
+                </td>
+                <td>
                     <div class="cart-quantity">
                         <button class="remove-button">
                             <img src="images/trash.svg" alt="">
@@ -51,19 +49,19 @@
                             <img src="images/plus.svg" alt="">
                         </button>
                     </div>
-                </th>
+                </td>
             </tr>
             <tr>
-                <th>
+                <td>
                     <img src="https://image.hm.com/assets/hm/9b/70/9b70f3d0d0c3260c648c33a3b660f1c2179aaf10.jpg?imwidth=1260" alt="Featured Item 2" height="220" width="145" class="featured-items">
-                </th>
-                <th class="cart-description">
-                    <p>Featured Item 2</p>
+                </td>
+                <td class="cart-description">
+                    <p><b>Featured Item 2</b></p>
                     <p>Colour</p>
                     <p>Size</p>
                     <p>Price</p>
-                </th>
-                <th>
+                </td>
+                <td>
                     <div class="cart-quantity">
                         <button class="remove-button">
                             <img src="images/trash.svg" alt="">
@@ -73,7 +71,7 @@
                             <img src="images/plus.svg" alt="">
                         </button>
                     </div>
-                </th>
+                </td>
             </tr>
         </table>
 
@@ -81,34 +79,34 @@
 
         <table id="order-summary">
             <tr>
-                <th class="amount-descr"><h2>Order Summary</h2></th>
-                <th class="amount"></th>
+                <td class="amount-descr"><h2>Order Summary</h2></td>
+                <td class="amount"></td>
             </tr>
             <tr>
-                <th class="amount-descr">Subtotal</th>
-                <th class="amount">$0.00</th>
+                <td class="amount-descr">Subtotal</td>
+                <td class="amount">$0.00</td>
             </tr>
             <tr>
-                <th class="amount-descr">Shipping</th>
-                <th class="amount">Free</th>
+                <td class="amount-descr">Shipping</td>
+                <td class="amount">Free</td>
             </tr>
             <tr>
-                <th class="amount-descr">Tax</th>
-                <th class="amount">$0.00</th>
+                <td class="amount-descr">Tax</td>
+                <td class="amount">$0.00</td>
             </tr>
             <tr>
-                <th class="amount-descr">Total</th>
-                <th class="amount">0.00</th>
+                <td class="amount-descr">Total</td>
+                <td class="amount">0.00</td>
             </tr>
             <tr>
-                <th><br></th>
-                <th><br></th>
+                <td><br></td>
+                <td><br></td>
             </tr>
             <tr>
-                <th></th>
-                <th>
+                <td></td>
+                <td>
                     <a href="order-confirmation.html"><button>Place Order</button></a>
-                </th>
+                </td>
             </tr>
         </table>
 
@@ -120,14 +118,14 @@
         <br>
         <table>
             <tr>
-                <th><a href="product-listing.html" class="footer-item">Products</a></th>
-                <th><a href="contact.html" class="footer-item">Contact</a></th>
-                <th><a href="login.html" class="footer-item">Create an Account</a></th>
+                <td><a href="product-listing.html" class="footer-item">Products</a></td>
+                <td><a href="contact.html" class="footer-item">Contact</a></td>
+                <td><a href="login.html" class="footer-item">Create an Account</a></td>
             </tr>
             <tr>
-                <th class="footer-item"><a href="cart.html">Cart</a></th>
-                <th class="footer-item"><a href="home.html">About Us</a></th>
-                <th class="footer-item"><a href="login.html">Login</a></th>
+                <td class="footer-item"><a href="cart.html">Cart</a></td>
+                <td class="footer-item"><a href="home.html">About Us</a></td>
+                <td class="footer-item"><a href="login.html">Login</a></td>
             </tr>
         </table>
     </footer>

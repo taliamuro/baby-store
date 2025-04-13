@@ -1,5 +1,29 @@
+:root {
+    --tm-page-margin: 50px 100px;
+    --tm-nav-bg-color: #b6cdbd;
+    --tm-current-page-btn-bg-color: #809c83;
+    --tm-current-page-btn-font-color: #2b342d;
+    --tm-nav-btn-bg-color: #5c715e;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* General Formatting of all Pages */
+.page-content {
+    margin: var(--tm-page-margin);
+}
+
+
+#nav {
+    background-color: var(--tm-nav-bg-color);
+    padding: 1px 0px;
+}
+
 nav ul li {
     display: inline-flex;
+    padding: 5px;
 }
 
 #nav-bar {
@@ -13,31 +37,40 @@ li {
 
 .nav-button {
     text-decoration: none;
-    padding: 8px;
+    padding: 11px 8px 8px 8px;
     border-radius: 8px;
-    border: 1px solid black;
-    color: black;
+    background-color: var(--tm-nav-btn-bg-color);
+    color: white;
+    border-bottom: 3px solid transparent;
 }
 
 .nav-button:hover {
-    background-color: #dfdfdf;
+    text-decoration: none;
+    border-bottom: 3px solid var(--tm-nav-btn-bg-color);
+    color: var(--tm-nav-btn-bg-color);
+    background-color: white;
 }
 
 #current-page {
-    background-color: #dfdfdf;
+    background-color: var(--tm-current-page-btn-bg-color);
+    color: var(--tm-current-page-btn-font-color);
 }
 
 #current-page:hover {
-    background-color: white;
+    border-bottom: 3px solid var(--tm-nav-btn-bg-color);
 }
 
 #search-bar {
     border-radius: 5px;
-    border: 1px solid black;
+    border: none;
+}
+
+#search-bar:hover {
+    border-bottom: 3px solid var(--tm-nav-btn-bg-color);
 }
 
 #about-us {
-    margin: 50px 100px;
+    margin: var(--tm-page-margin);
 }
 
 footer {
@@ -63,10 +96,6 @@ footer {
 .featured-items {
     padding: 2px;
     margin: 2px;
-}
-
-#cart-page-content {
-    margin: 50px 50px;
 }
 
 .cart-items {
@@ -106,10 +135,6 @@ footer {
     text-align: right;
 }
 
-#order-confirmation {
-    margin: 50px;
-}
-
 .billing-info {
     text-align: left;
     padding: 5px 15px 5px 0px;
@@ -127,18 +152,14 @@ footer {
 
 #summary-message {
     margin: 50px 100px;
-    background-color: rgb(224, 224, 224);
+    background-color: var(--tm-nav-bg-color);
     padding: 50px;
 }
 
 .login {
-    margin: 50px 100px;
+    margin: 50px 100px 50px 0px;
     border: 1px solid black;
     padding: 20px 50px;
-}
-
-.login form table tr th {
-    padding: 0px 10px;
 }
 
 .login-label {

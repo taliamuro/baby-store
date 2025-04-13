@@ -13,71 +13,84 @@
     
     <!-- Navigation Bar -->
     <div id="nav-bar">
-        <nav>
+        <nav id="nav">
             <ul>
                 <li><a href="home.html" class="nav-button">Home</a></li>
                 <li><a href="contact.html" class="nav-button" id="current-page">Contact</a></li>
                 <li><a href="product-listing.html" class="nav-button">Products</a></li>
-                <li><form><input type="text" name="search-bar" id="search-bar" placeholder="&#128270;"></form></li>
+                <li><form><input type="search" name="search-bar" id="search-bar" placeholder="&#128270;"></form></li>
                 <li><a href="cart.html"><img src="images/cart.svg" alt="Shopping Cart"></a></li>
                 <li><a href="login.html"><img src="images/person-circle.svg" alt="Login"></a></li>
             </ul>
         </nav>
-        <hr>
     </div>
 
-    <h1>Contact Us</h1>
-    
-    <!-- Store Info Section -->
-    <div id="store-info-section" class="page-section">
-        <!-- <label for="phone">Phone Number:</label>
+    <div class="page-content">
+        <!-- Store Info Section -->
+        <div id="store-info-section" class="page-section">
+            <!-- <label for="phone">Phone Number:</label> -->
+            <h1>Contact Us</h1>
 
-        <label for="email">Email:</label>
-        <label for="address">Address:</label>
-        <label for="opening-hours">Opening hours:</label> -->
-        <p>Phone Number: <a href="tel:+11111111111">+1(111)-111-1111</a></p>
-        <p>Email: <a href="mailto:bestbabystore@gmail.com">bestbabystore@gmail.com</a></p>
-        <p>Address: <a href="#store-location">2305 Rockland Rd, Montreal, Quebec H3P 3E9</a></p>
-        <p id="opening-hours-label">Opening Hours:</p>
-        
-        <table id="opening-hours-table">
+            <table>
                 <tr>
-                    <td>Weekdays:</td>
-                    <td>10:00am- 8:00pm</td>
+                    <th>Phone Number</th>
+                    <td><a href="tel:+11111111111">+1(111)-111-1111</a></td>
                 </tr>
                 <tr>
-                    <td>Weekend:</td>
-                    <td>10:00pm - 5:00pm</td>
+                    <th>Email</th>
+                    <td><a href="mailto:bestbabystore@gmail.com">bestbabystore@gmail.com</a></td>
                 </tr>
                 <tr>
-                    <td>Holidays:</td>
-                    <td>12:00pm- 5:00pm</td>
+                    <th>Address</th>
+                    <td></td>
                 </tr>
-        </table>
-    </div>
+            </table>
 
-    <br> <br> <br>
+            <p>Phone Number: <a href="tel:+11111111111">+1(111)-111-1111</a></p>
+            <p>Email: <a href="mailto:bestbabystore@gmail.com">bestbabystore@gmail.com</a></p>
+            <p>Address: <a href="#store-location">2305 Rockland Rd, Montreal, Quebec H3P 3E9</a></p>
+            <p id="opening-hours-label">Opening Hours:</p>
+            
+            <table id="opening-hours-table">
+                    <tr>
+                        <td>Weekdays:</td>
+                        <td>10:00am- 8:00pm</td>
+                    </tr>
+                    <tr>
+                        <td>Weekend:</td>
+                        <td>10:00pm - 5:00pm</td>
+                    </tr>
+                    <tr>
+                        <td>Holidays:</td>
+                        <td>12:00pm- 5:00pm</td>
+                    </tr>
+            </table>
+        </div>
 
-    <!-- Client Form Section -->
-     <div class="page-section">
-        <h2>Send Us a Message</h2>
-        <form id="client-form" >
-            <label for="client-email">Your Email:</label>
-            <input type="text" name="client-email" id="client-email">
-            <br> <br>
-            <label for="client-message">Message:</label>
-            <textarea name="client-message" id="client-message" rows="6" cols="70"></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </div>
+        <br> <br> <br>
 
-    <br> <br> <br>
+        <!-- Client Form Section -->
+        <div class="page-section">
+            <h2>Send Us a Message</h2>
+            <form id="client-form" >
+                <label for="client-email">Your Email:</label>
+                <input type="text" name="client-email" id="client-email">
+                <br> <br>
+                <label for="client-message">Message:</label>
+                <textarea name="client-message" id="client-message" rows="6" cols="70"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
 
-    <div id="store-location">
-        <h2>Our Location:</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11180.655167442696!2d-73.6588162!3d45.5269094!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc9185570564d73%3A0xef4d457cac67c567!2sCentre%20Rockland!5e0!3m2!1sen!2sca!4v1744132388183!5m2!1sen!2sca" 
-          height="400px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+        <br><br><br>
+
+        <div id="store-location">
+            <h2>Our Location:</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11180.655167442696!2d-73.6588162!3d45.5269094!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc9185570564d73%3A0xef4d457cac67c567!2sCentre%20Rockland!5e0!3m2!1sen!2sca!4v1744132388183!5m2!1sen!2sca" 
+            height="400px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
     </div>
 
     <!-- Footer with links -->
@@ -86,14 +99,14 @@
         <br>
         <table>
             <tr>
-                <th><a href="product-listing.html" class="footer-item">Products</a></th>
-                <th><a href="contact.html" class="footer-item">Contact</a></th>
-                <th><a href="login.html" class="footer-item">Create an Account</a></th>
+                <td><a href="product-listing.html" class="footer-item">Products</a></td>
+                <td><a href="contact.html" class="footer-item">Contact</a></td>
+                <td><a href="login.html" class="footer-item">Create an Account</a></td>
             </tr>
             <tr>
-                <th class="footer-item"><a href="cart.html">Cart</a></th>
-                <th class="footer-item"><a href="home.html">About Us</a></th>
-                <th class="footer-item"><a href="login.html">Login</a></th>
+                <td class="footer-item"><a href="cart.html">Cart</a></td>
+                <td class="footer-item"><a href="home.html">About Us</a></td>
+                <td class="footer-item"><a href="login.html">Login</a></td>
             </tr>
         </table>
     </footer>
