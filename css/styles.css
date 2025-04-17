@@ -18,7 +18,7 @@ body {
 
 #nav {
     background-color: var(--tm-nav-bg-color);
-    padding: 1px 0px;
+    padding: 10px;
 }
 
 nav ul li {
@@ -60,13 +60,19 @@ li {
     border-bottom: 3px solid var(--tm-nav-btn-bg-color);
 }
 
-#search-bar {
-    border-radius: 5px;
-    border: none;
+#search-button {
+    border: 1px solid var(--tm-nav-btn-bg-color);
+    border-bottom: 3px solid transparent;
+    color: var(--tm-nav-btn-bg-color);
 }
 
-#search-bar:hover {
+#search-button:hover {
     border-bottom: 3px solid var(--tm-nav-btn-bg-color);
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    background-color: white;
+    color: 
 }
 
 #about-us {
@@ -100,6 +106,7 @@ footer {
 
 .cart-items {
     display: inline-flex;
+    justify-self: center;
 }
 
 .cart-description {
