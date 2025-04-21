@@ -15,20 +15,25 @@ body {
     margin: var(--tm-page-margin);
 }
 
+#logo {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
 
 #nav {
     background-color: var(--tm-nav-bg-color);
-    padding: 10px;
+    padding-top: 15px;
+    padding-bottom: 1px;
 }
 
 nav ul li {
     display: inline-flex;
-    padding: 5px;
 }
 
 #nav-bar {
     text-align: center;
-    margin: 50px;
+    margin: 0px 50px 50px 50px;
 }
 
 li {
@@ -37,10 +42,13 @@ li {
 
 .nav-button {
     text-decoration: none;
-    padding: 11px 8px 8px 8px;
+    padding: 10px;
     border-radius: 8px;
     background-color: var(--tm-nav-btn-bg-color);
     color: white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
     border-bottom: 3px solid transparent;
 }
 
@@ -58,20 +66,6 @@ li {
 
 #current-page:hover {
     border-bottom: 3px solid var(--tm-nav-btn-bg-color);
-}
-
-#search-button {
-    border: 1px solid var(--tm-nav-btn-bg-color);
-    border-bottom: 3px solid transparent;
-    color: var(--tm-nav-btn-bg-color);
-}
-
-#search-button:hover {
-    border-bottom: 3px solid var(--tm-nav-btn-bg-color);
-    border-top: 1px solid transparent;
-    border-left: 1px solid transparent;
-    border-right: 1px solid transparent;
-    background-color: white;
 }
 
 #about-us {
@@ -129,7 +123,7 @@ footer {
 
 #order-summary {
     border: 1px solid black;
-    padding: 50px;
+    padding: 10px;
 }
 
 .amount-descr {
