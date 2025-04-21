@@ -1,0 +1,163 @@
+[
+    {
+      "id": 224,
+      "title": "Delete mat karo",
+      "slug": "delete-mat-karo",
+      "price": 1234,
+      "description": "dfgvbhnjm",
+      "category": {
+        "id": 29,
+        "name": "edidddfsd",
+        "slug": "edidddfsd",
+        "image": "https://redux-toolkit.js.org/introduction/getting-started",
+        "creationAt": "2025-04-21T09:45:32.000Z",
+        "updatedAt": "2025-04-21T13:51:47.000Z"
+      },
+      "images": [
+        "https://m.media-amazon.com/images/I/817Da7pNmfL._AC_SX679_.jpg"
+      ],
+      "creationAt": "2025-04-21T13:03:46.000Z",
+      "updatedAt": "2025-04-21T13:03:46.000Z"
+    },
+    {
+      "id": 229,
+      "title": "smit bhai",
+      "slug": "smit-bhai",
+      "price": 1001,
+      "description": "desc",
+      "category": {
+        "id": 29,
+        "name": "edidddfsd",
+        "slug": "edidddfsd",
+        "image": "https://redux-toolkit.js.org/introduction/getting-started",
+        "creationAt": "2025-04-21T09:45:32.000Z",
+        "updatedAt": "2025-04-21T13:51:47.000Z"
+      },
+      "images": [
+        "https://m.media-amazon.com/images/I/817Da7pNmfL._AC_SX679_.jpg"
+      ],
+      "creationAt": "2025-04-21T13:09:23.000Z",
+      "updatedAt": "2025-04-21T15:46:57.000Z"
+    },
+    {
+      "id": 242,
+      "title": "hihihhi",
+      "slug": "hihihhi",
+      "price": 123456,
+      "description": "kya karoge description padhke?",
+      "category": {
+        "id": 29,
+        "name": "edidddfsd",
+        "slug": "edidddfsd",
+        "image": "https://redux-toolkit.js.org/introduction/getting-started",
+        "creationAt": "2025-04-21T09:45:32.000Z",
+        "updatedAt": "2025-04-21T13:51:47.000Z"
+      },
+      "images": [
+        "https://placehold.co/600x400"
+      ],
+      "creationAt": "2025-04-21T15:01:14.000Z",
+      "updatedAt": "2025-04-21T15:48:29.000Z"
+    },
+    {
+      "id": 245,
+      "title": "Classic Red Pullover",
+      "slug": "classic-red-pullover",
+      "price": 40,
+      "description": "High index coated sunglasses",
+      "category": {
+        "id": 127,
+        "name": "updated category",
+        "slug": "updated-category",
+        "image": "https://emprendedores.es/wp-content/uploads/%C2%BFComo-montar-una-tienda-de-ropa-1024x683.jpg",
+        "creationAt": "2025-04-21T14:06:38.000Z",
+        "updatedAt": "2025-04-21T15:39:54.000Z"
+      },
+      "images": [
+        "https://i.imgur.com/1twoaDy.jpeg"
+      ],
+      "creationAt": "2025-04-21T15:06:24.000Z",
+      "updatedAt": "2025-04-21T15:06:24.000Z"
+    },
+    {
+      "id": 250,
+      "title": "Mini Bike",
+      "slug": "mini-bike",
+      "price": 121,
+      "description": "A description",
+      "category": {
+        "id": 127,
+        "name": "updated category",
+        "slug": "updated-category",
+        "image": "https://emprendedores.es/wp-content/uploads/%C2%BFComo-montar-una-tienda-de-ropa-1024x683.jpg",
+        "creationAt": "2025-04-21T14:06:38.000Z",
+        "updatedAt": "2025-04-21T15:39:54.000Z"
+      },
+      "images": [
+        "https://i.imgur.com/BG8J0Fj.jpg"
+      ],
+      "creationAt": "2025-04-21T15:41:06.000Z",
+      "updatedAt": "2025-04-21T15:41:06.000Z"
+    },
+    {
+      "id": 251,
+      "title": "Soccer Cleates",
+      "slug": "soccer-cleates",
+      "price": 76,
+      "description": "A description",
+      "category": {
+        "id": 127,
+        "name": "updated category",
+        "slug": "updated-category",
+        "image": "https://emprendedores.es/wp-content/uploads/%C2%BFComo-montar-una-tienda-de-ropa-1024x683.jpg",
+        "creationAt": "2025-04-21T14:06:38.000Z",
+        "updatedAt": "2025-04-21T15:39:54.000Z"
+      },
+      "images": [
+        "https://i.imgur.com/qNOjJje.jpeg"
+      ],
+      "creationAt": "2025-04-21T15:41:31.000Z",
+      "updatedAt": "2025-04-21T15:41:31.000Z"
+    },
+    {
+      "id": 252,
+      "title": "Xbox One Controller",
+      "slug": "xbox-one-controller",
+      "price": 49,
+      "description": "A description",
+      "category": {
+        "id": 127,
+        "name": "updated category",
+        "slug": "updated-category",
+        "image": "https://emprendedores.es/wp-content/uploads/%C2%BFComo-montar-una-tienda-de-ropa-1024x683.jpg",
+        "creationAt": "2025-04-21T14:06:38.000Z",
+        "updatedAt": "2025-04-21T15:39:54.000Z"
+      },
+      "images": [
+        "https://i.imgur.com/ZANVnHE.jpeg"
+      ],
+      "creationAt": "2025-04-21T15:42:06.000Z",
+      "updatedAt": "2025-04-21T15:42:06.000Z"
+    },
+    {
+      "id": 253,
+      "title": "Men's Colongne",
+      "slug": "men-s-colongne",
+      "price": 34,
+      "description": "A description",
+      "category": {
+        "id": 127,
+        "name": "updated category",
+        "slug": "updated-category",
+        "image": "https://emprendedores.es/wp-content/uploads/%C2%BFComo-montar-una-tienda-de-ropa-1024x683.jpg",
+        "creationAt": "2025-04-21T14:06:38.000Z",
+        "updatedAt": "2025-04-21T15:39:54.000Z"
+      },
+      "images": [
+        "https://cdn.pixabay.com/photo/2024/01/09/16/30/perfume-8497908_640.jpg"
+      ],
+      "creationAt": "2025-04-21T15:51:43.000Z",
+      "updatedAt": "2025-04-21T15:51:43.000Z"
+    }
+  ]
+  
