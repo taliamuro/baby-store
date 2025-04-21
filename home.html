@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-page="home">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,7 +23,7 @@
                 <li><a href="product-listing.html" class="nav-button">Products</a></li>
                 <li><div class="container-fluid">
                     <form class="d-flex" role="search">
-                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <input id="search-input" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                       <button class="nav-button" type="submit">Search</button>
                     </form></div>
                 </li>
@@ -70,5 +70,7 @@
             </tr>
         </table>
     </footer>
+
+    <script type="module" src="js/app.js" defer></script>
 </body>
 </html>

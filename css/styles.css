@@ -68,12 +68,18 @@ li {
     border-bottom: 3px solid var(--tm-nav-btn-bg-color);
 }
 
+#search-input {
+    border-radius: 8px;
+}
+
 #about-us {
     margin: var(--tm-page-margin);
 }
 
 footer {
     margin: 50px;
+    display: flex;
+    justify-content: center;
 }
 
 .footer-item {
