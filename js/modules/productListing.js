@@ -32,15 +32,15 @@ export async function fetchProducts() {
 export function parseProducts(products) {
     const container = document.getElementById("product-container");
     
-    products.forEach(product => {
-        const card = document.createElement("div");
-        card.className = "product-card";
+    products.forEach((product, index) => {
+        const card = document.createElement("div");//add a section
+        card.className = "product-card";//We need a class name to style it
         
-        const imageSrc = (product.images && product.images.length > 0) ? product.images[0] : "images/placeholder-image.jpeg";
-
+        const imageSrc = "images/placeholder-image.jpeg";//Adding placeholder image
+        
         card.innerHTML = `
             <img src="${product["thumbnail_img"] || 'https://via.placeholder.com/300x200'}" alt="${product["item-title"]}" height="350">
-            <h3>${product["item_title"].length > 15 ? product["item_title"].substring(0,15) + '...' : product["item_title"]}</h3>
+            <h3><a href="product-details.html?id=${index}">${product["item_title"].length > 15 ? product["item_title"].substring(0,15) + '...' : product["item_title"]}</h3>
             <p>$${product["unit_price"]}</p>
         `;
 
@@ -48,4 +48,4 @@ export function parseProducts(products) {
     });
 }
 
-fetchProducts();
+// fetchProducts();
