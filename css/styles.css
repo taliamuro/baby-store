@@ -218,6 +218,20 @@ iframe{
     
 }
 
+.product-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px #00000033;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.product-card:hover {
+    box-shadow: 3px 3px 10px #00000060;
+}
+
 /*Product Listing End*/
 
 
