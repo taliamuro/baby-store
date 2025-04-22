@@ -224,7 +224,7 @@ iframe{
 .product-card {
     background-color: white;
     border-radius: 10px;
-    box-shadow: 3px 3px 10px #00000033;
+    box-shadow: 3px 3px 3px #00000033;
     color: black;
     text-align: center;
     padding: 10px;
@@ -233,6 +233,12 @@ iframe{
 
 .product-card:hover {
     box-shadow: 3px 3px 10px #00000060;
+}
+
+#product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 /*Product Listing End*/
