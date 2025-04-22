@@ -18,7 +18,10 @@ body {
 #logo {
     display: flex;
     justify-content: center;
-    padding-top: 20px;
+    font-family: "Modak", system-ui;
+    font-size: 6.5em;
+    color: var(--tm-nav-bg-color);
+    text-shadow: 5px 5px 0px var(--tm-nav-btn-bg-color);
 }
 
 #nav {
@@ -216,6 +219,20 @@ iframe{
     width:90px;
     border: 1px solid rgb(167, 164, 164);
     
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px #00000033;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.product-card:hover {
+    box-shadow: 3px 3px 10px #00000060;
 }
 
 /*Product Listing End*/

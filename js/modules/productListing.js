@@ -27,7 +27,6 @@ export async function fetchProducts() {
     } catch (error) {
         console.error("Error loading products: ", error);
     }
-    
 }
 
 export function parseProducts(products) {
@@ -43,7 +42,6 @@ export function parseProducts(products) {
             <img src="${product["thumbnail_img"] }" alt="${product["item_title"]}" height="250" width="190">
             <h3><a href="product-details.html?id=${index}">${product["item_title"]}</a></h3>
             <p>$${product["unit_price"]}</p>
-            <p>${product["description"]}</p>
         `;
 
         container.appendChild(card);
