@@ -44,7 +44,7 @@
             "color": "White",
             "unit_price": 12.99,
             "qty_in_stock": 1,
-            "thumbnail_img": "https://image.hm.com/assets/hm/0a/9d/0a9d51b36b494cac409e7a14df3e5cd1d1f7d97c.jpg?imwidth=1260",
+            "thumbnail_img": "./images/applique-t-shirt.avif",
             "gender": "girl"
         },
 

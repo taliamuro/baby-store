@@ -40,39 +40,13 @@ export function parseProducts(products) {
         const imageSrc = (product.images && product.images.length > 0) ? product.images[0] : "images/placeholder-image.jpeg";
 
         card.innerHTML = `
-            <img src="${(product.images && product.images[0]) || 'https://via.placeholder.com/300x200'}" alt="${product.title}">
-            <h3>${product.title}</h3>
-            <p>$${product.price}</p>
-            <p>${product.description}</p>
+            <img src="${product["thumbnail_img"] || 'https://via.placeholder.com/300x200'}" alt="${product["item-title"]}" height="250" width="190">
+            <h3>${product["item_title"]}</h3>
+            <p>$${product["unit_price"]}</p>
+            <p>${product["description"]}</p>
         `;
 
         container.appendChild(card);
-
-        // // Creating card image
-        // const img = document.createElement("img");
-        // img.scr = product.images[0] || "https://via.placeholder.com/300x200";
-        // img.className = "card-img-top";
-        // img.alt = product.title;
-        // card.appendChild(img);
-
-        // // Creating card body
-        // const cardBody = document.createElement("div");
-        // cardBody.className = "card-body";
-
-        // // Creating card title
-        // const cardTitle = document.createElement("h5");
-        // cardTitle.className = "card-title";
-        // cardTitle.textContent = product.cardTitle;
-        // cardBody.appendChild(cardTitle);
-
-        // // Creating card text (Price)
-        // const price = document.createElement("p");
-        // price.className = "card-text";
-        // price.textContent = `$${product.price}`;
-        // cardBody.appendChild(price)
-
-        // card.appendChild(cardBody);
-        // container.appendChild(card);
     });
 }
 
