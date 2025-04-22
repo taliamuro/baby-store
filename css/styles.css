@@ -251,3 +251,63 @@ iframe{
     }
 }
 /*Prodect Detail End*/
+
+/* Carousel Begin */
+.carousel-container {
+    position: relative;
+    max-width: 24rem;
+    margin: 0 auto;/*automatic left and right value*/
+    padding: 1rem 0;
+}
+
+
+.slider {
+    display: flex;
+    aspect-ratio: 18 / 10;
+    overflow-x: auto; /*By default, the images that overflow will have a 
+    scroll bar to scroll on the right/left to view the items*/
+    scroll-snap-type: x mandatory; /*for snap effect*/
+    scroll-behavior: smooth; /*For smooth animation*/
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0,0%,0%,0.25); /*For shadow*/
+    border-radius: 0.5rem;
+}
+
+.slider img {
+    flex: 1 0 100%; /*initial size of the images is 100%*/
+    scroll-snap-align: start;
+    object-fit: fill; /*fill parent container but with natural image size(possible crop)*/
+
+}
+
+.slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.slider-nav a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #254e36;
+    opacity: 0.75;
+    transition: opacity ease 0.120ms;/*for smooth opacity transition*/
+}
+
+.slider-nav a:hover {
+    opacity: 1;
+    scale: 1.15;
+}
+
+.slider::-webkit-scrollbar {
+    display: none; /* A way to hide the scrollbar */
+}
+
+/*Youtube ref : https://www.youtube.com/watch?v=McPdzhLRzCg*/
+/* Carousel End */
