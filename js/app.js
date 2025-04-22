@@ -15,7 +15,7 @@ function initApp() {
     
     // Which page the user is visiting
     const page = document.querySelector("[data-page]").dataset.page;
-    console.log(page);
+    console.log("Current Page: " + page);
     switch (page) {
         case "cart":
             initCart();
