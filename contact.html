@@ -37,7 +37,7 @@
 
     <div class="page-content">
         <!-- Store Info Section -->
-        <div id="store-info-section" class="page-section">
+        <div id="store-info-section">
             <!-- <label for="phone">Phone Number:</label> -->
             <h1>Contact Us</h1>
 
@@ -78,16 +78,20 @@
         <br> <br> <br>
 
         <!-- Client Form Section -->
-        <div class="page-section">
-            <h2>Send Us a Message</h2>
-            <form id="client-form" >
-                <label for="client-email">Your Email:</label>
-                <input type="text" name="client-email" id="client-email">
-                <br> <br>
-                <label for="client-message">Message:</label>
-                <textarea name="client-message" id="client-message" rows="6" cols="70"></textarea>
-                <button type="submit">Send</button>
-            </form>
+
+        <h2>Send Us a Message</h2>
+        
+        <div id="page-section">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <br>
+                <button id="send-email-btn" type="button" class="btn btn-primary">Send</button>
+              </div>
         </div>
 
         <br><br><br>

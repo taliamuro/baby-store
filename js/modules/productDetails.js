@@ -18,10 +18,14 @@ export function initProductDetails() {
             const container = document.getElementById("product-detail-container");
 
             container.innerHTML = `
-                <h1>${product["item_title"]}</h1>
                 <img src="${product["thumbnail_img"] || 'https://via.placeholder.com/300x200'}" alt="${product["item_title"]}" height="300">
-                <p><strong>Price:</strong> $${product["unit_price"]}</p>
-                <p><strong>Description:</strong> ${product["description"]}</p>
+                <div id="product-description">
+                    <h2>${product["item_title"]}</h2>
+                    <p>$${product["unit_price"]}</p>
+                    <h5>Description</h5>
+                    <p>${product["description"]}</p>
+                    <button type="button" class="btn btn-primary">Add To Cart</button>
+                </div>
             `;
         } catch (error) {
             console.error("Failed to load product:", error);

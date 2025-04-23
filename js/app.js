@@ -5,7 +5,7 @@ import {initHome} from "./modules/home.js";
 import {initLogin} from "./modules/login.js";
 import {initOrderConfirmation} from "./modules/orderConfirmation.js";
 import {initProductDetails} from "./modules/productDetails.js";
-import {fetchProducts} from "./modules/productListing.js";
+import {initProductListing} from "./modules/productListing.js";
 
 // Ensure that the document is fully loaded and parsed
 document.addEventListener('DOMContentLoaded', initApp);
@@ -36,7 +36,7 @@ function initApp() {
             initProductDetails();
             break;
         case "product-listing":
-            fetchProducts();
+            initProductListing();
             break;
         default:
             break;

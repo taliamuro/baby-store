@@ -132,6 +132,9 @@ footer {
 
 #order-summary {
     border: 1px solid black;
+}
+
+#order-summary td {
     padding: 10px;
 }
 
@@ -150,9 +153,10 @@ footer {
 }
 
 #order-confirmation {
-    display: inline-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     border: 1px solid black;
-    margin: 50px;
 }
 
 #confirmation-message {
@@ -164,6 +168,8 @@ footer {
     background-color: var(--tm-nav-bg-color);
     padding: 50px;
 }
+
+/* Account Page Styling Start */
 
 .login {
     margin: 50px 100px 50px 0px;
@@ -182,19 +188,22 @@ footer {
 
 #create-account-login {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
+/* Account Page Styling End */
 
 /*Contact Us Page Begin*/
 #opening-hours-label, #opening-hours-table {
     display: inline;
 }
+
 #opening-hours-label {
     margin-right: 10px;
 }
-/* #opening-hours-table {
-    border: 1px solid;
-} */
-#client-form{
+
+#client-form {
     /* display: flex; */
     padding: 1%;
     width: 60%;
@@ -204,6 +213,16 @@ footer {
 iframe{
     width: 70%;    
 }
+
+#send-email-btn {
+    text-align: right;
+}
+
+#page-section {
+    border: 1px solid black;
+    padding: 20px;
+}
+
 /*Contact Us Page End*/
 
 /*Product Listing Begin*/
@@ -244,8 +263,9 @@ iframe{
 /*Product Listing End*/
 
 
-/*Prodect Detail Begin*/
-.product-description{
+/*Product Detail Begin*/
+
+/* .product-description{
     margin: 5%;
     padding-right: 10px;
     display: flex;
@@ -255,8 +275,18 @@ iframe{
         display: inline;
         align-items: center;
     }
+} */
+
+#product-detail-container {
+    display: flex;
+
 }
-/*Prodect Detail End*/
+
+#product-description {
+    padding: 10px 30px;
+}
+
+/*Product Detail End*/
 
 /* Carousel Begin */
 .carousel-container {
