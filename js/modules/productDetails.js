@@ -24,13 +24,18 @@ export function initProductDetails() {
                     <p>$${product["unit_price"]}</p>
                     <h5>Description</h5>
                     <p>${product["description"]}</p>
-                    <button type="button" class="btn btn-primary">Add To Cart</button>
+                    <button type="button" class="btn btn-primary" id="add-to-cart-btn">Add To Cart</button>
                 </div>
             `;
+
+            const addToCartbtn = document.getElementById("add-to-cart-btn");
+            addToCartbtn.addEventListener('click', (event)=> {
+                
+            });
+
         } catch (error) {
             console.error("Failed to load product:", error);
             document.getElementById("product-detail-container").innerHTML = "<p>Product not found.</p>";
         }
     });
 }
-
