@@ -6,6 +6,7 @@ import {initLogin} from "./modules/login.js";
 import {initOrderConfirmation} from "./modules/orderConfirmation.js";
 import {initProductDetails} from "./modules/productDetails.js";
 import {initProductListing} from "./modules/productListing.js";
+import {fetchData} from "./modules/fetchWrapper.js";
 
 // Ensure that the document is fully loaded and parsed
 document.addEventListener('DOMContentLoaded', initApp);
