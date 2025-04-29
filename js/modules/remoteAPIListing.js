@@ -1,3 +1,5 @@
+import {fetchData} from "./fetchWrapper.js";
+
 export function initRemoteAPIListing(params) {
     fetchProductsfromAPI();
 }
@@ -13,7 +15,7 @@ export async function fetchProductsfromAPI() {
     }
 }
 
-export function parseProductsAPI(products) {
+export function parseProducts(products) {
     console.log(products);
     const container = document.getElementById("product-container");
     
@@ -24,10 +26,9 @@ export function parseProductsAPI(products) {
         const imageSrc = "images/placeholder-image.jpeg";//Adding placeholder image
         
         card.innerHTML = `
-            <img src="${product["thumbnail_img"] || 'https://via.placeholder.com/300x200'}" alt="${product["item-title"]}" height="350">
-            <h5><a class="listing-description-preview" href="product-details.html?id=${index}">${product["item_title"].length > 20 ? product["item_title"].substring(0,20) + '...' : product["item_title"]}</h5>
-            <p>$${product["unit_price"]}</p>
-            <button type="button" class="btn btn-primary">Add To Cart</button>
+            <img src="${product.images[1] || 'https://via.placeholder.com/300x200'}" alt="${product.title}" height="350">
+            <h5><a class="listing-description-preview" href="product-details.html?id=${index}">${product.title.length > 20 ? product.title.substring(0,20) + '...' : product.title}</h5>
+            <p>$${product.price}</p>
         `;
 
         container.appendChild(card);
