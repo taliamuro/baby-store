@@ -40,7 +40,7 @@ export function parseProducts(products) {
         
         card.innerHTML = `
             <img src="${product["thumbnail_img"] || 'https://via.placeholder.com/300x200'}" alt="${product["item-title"]}" height="350">
-            <h5><a href="product-details.html?id=${index}">${product["item_title"].length > 20 ? product["item_title"].substring(0,20) + '...' : product["item_title"]}</h5>
+            <h5><a class="listing-description-preview" href="product-details.html?id=${index}">${product["item_title"].length > 20 ? product["item_title"].substring(0,20) + '...' : product["item_title"]}</h5>
             <p>$${product["unit_price"]}</p>
             <button type="button" class="btn btn-primary">Add To Cart</button>
         `;

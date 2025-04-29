@@ -260,6 +260,10 @@ iframe{
     justify-content: space-between;
 }
 
+.listing-description-preview {
+    text-decoration: none;
+}
+
 /*Product Listing End*/
 
 
