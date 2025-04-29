@@ -1,11 +1,12 @@
 // ES Module for implementing the product listing logic
 
 export function initProductListing() {
-    fetchProducts();
+    fetchProductsfromCatalog();
+    fetchProductsfromAPI();
 }
 
-export async function fetchProducts() {
-    console.log("Fetching products...");
+export async function fetchProductsfromCatalog() {
+    console.log("Fetching products from catalog...");
     
     try {
         const response = await fetch('data/catalog.json');
@@ -24,6 +25,17 @@ export async function fetchProducts() {
             throw new TypeError("products is not an array.");
             
         }
+    } catch (error) {
+        console.error("Error loading products: ", error);
+    }
+}
+
+export async function fetchProductsfromAPI() {
+    console.log("Fetching products from API...");
+    try {
+        const uri = "https://api.escuelajs.co/api/v1/products";
+        const products = await fetchData(uri);
+        parseProducts(products);
     } catch (error) {
         console.error("Error loading products: ", error);
     }
