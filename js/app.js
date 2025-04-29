@@ -39,6 +39,8 @@ function initApp() {
         case "product-listing":
             initProductListing();
             break;
+        case "remote-api-listing":
+            
         default:
             break;
     }
