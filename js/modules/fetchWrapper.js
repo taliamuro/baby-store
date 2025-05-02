@@ -14,6 +14,7 @@ export async function fetchData(resourceUri) {
         return data;
         // 4. Parse and render the HTML table
     } catch (error) {
+        console.log("Problem ocurred.... :(");
         console.log(error.message);
     }
 }

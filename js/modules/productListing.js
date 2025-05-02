@@ -44,12 +44,8 @@ export function parseProducts(products) {
     //         <h5><a class="listing-description-preview">${product["item_title"].length > 20 ? product["item_title"].substring(0,20) + '...' : product["item_title"]}</h5>
     //         <p>Unit Price: </p>
     //     `;
-
     //     container.appendChild(card);
-
     //     const link = document.getElementsByClassName()
-
-
     //});
     products.forEach(product => {
         const card = document.createElement("div");
@@ -69,7 +65,8 @@ export function parseProducts(products) {
         const link = document.getElementById(itemId);
 
         link.addEventListener('click', ()=>{
-        //a) Read the value of the show id custom attribute        
+        //a) Read the value of the show id custom attribute   
+             
         //b) Save it into local storage
         //c) Redirect user to the details page
         });

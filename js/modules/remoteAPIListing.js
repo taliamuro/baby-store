@@ -1,4 +1,4 @@
-import {fetchData} from "./fetchWrapper.js";
+import { fetchData } from "./fetchWrapper.js";
 
 export function initRemoteAPIListing(params) {
     fetchProductsfromAPI();
