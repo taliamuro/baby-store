@@ -1,0 +1,50 @@
+{
+    "categories": [
+    {
+    "id": 1,
+    "name": "Malls",
+    "description": "Big Shopping Mall",
+    "markerIcon": "markers/supermarket.png"
+    },
+    {
+    "id": 2,
+    "name": "Metro Stations",
+    "description": "Easy transport by metro.",
+    "markerIcon": "markers/bus.png"
+    }
+    ],
+    "places": [
+    {
+    "name": "CF Carrefour Laval",
+    "description": "Visit our store branch in Laval",
+    "point": {
+    "coordinates": [45.570319018777255, -73.75170754491079]
+    },
+    "categoryId": 1
+    },
+    {
+    "name": "Royal Mount",
+    "description": "Fanciest mall! Visit our store branch",
+    "point": {
+    "coordinates": [45.500125178732034, -73.66306618465792]
+    },
+    "categoryId": 1
+    },
+    {
+    "name": "Laurier Station",
+    "description": "Metro station facing the mall!",
+    "point": {
+    "coordinates": [45.52786806868063, -73.5864177354544]
+    },
+    "categoryId": 2
+    },
+    {
+    "name": "Cremazie Staion",
+    "description": "Very busy metro station.",
+    "point": {
+    "coordinates": [45.54730718861041, -73.63811868552652]
+    },
+    "categoryId": 2
+    }
+    ]
+}
