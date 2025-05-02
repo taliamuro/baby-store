@@ -33,19 +33,45 @@ export async function fetchProductsfromCatalog() {
 export function parseProducts(products) {
     const container = document.getElementById("product-container");
     
-    products.forEach((product, index) => {
-        const card = document.createElement("div");//add a section
-        card.className = "product-card";//We need a class name to style it
+    // products.forEach((product, index) => {
+    //     const card = document.createElement("div");//add a section
+    //     card.className = "product-card";//We need a class name to style it
         
-        const imageSrc = "images/placeholder-image.jpeg";//Adding placeholder image
+    //     const imageSrc = "images/placeholder-image.jpeg";//Adding placeholder image
+    //     // <h5><a class="listing-description-preview" href="product-details.html?id=${index}">${product["item_title"].length > 20 ? product["item_title"].substring(0,20) + '...' : product["item_title"]}</h5>
+    //     card.innerHTML = `
+    //         <img src="${product["thumbnail_img"] || 'https://via.placeholder.com/300x200'}" alt="${product["item-title"]}" height="350">
+    //         <h5><a class="listing-description-preview">${product["item_title"].length > 20 ? product["item_title"].substring(0,20) + '...' : product["item_title"]}</h5>
+    //         <p>Unit Price: </p>
+    //     `;
+
+    //     container.appendChild(card);
+
+    //     const link = document.getElementsByClassName()
+
+
+    //});
+    products.forEach(product => {
+        const card = document.createElement("div");
+        card.className = "product-card";
         
+        const imageSrc = (product.images && product.images.length > 0) ? product.images[0] : "images/placeholder-image.jpeg";
+
+        const itemId = product.item_id;
+
         card.innerHTML = `
-            <img src="${product["thumbnail_img"] || 'https://via.placeholder.com/300x200'}" alt="${product["item-title"]}" height="350">
-            <h5><a class="listing-description-preview" href="product-details.html?id=${index}">${product["item_title"].length > 20 ? product["item_title"].substring(0,20) + '...' : product["item_title"]}</h5>
+            <img src="${product["thumbnail_img"] || 'https://via.placeholder.com/300x200'}" alt="${product["item-title"]}" height="250" width="190">
+            <a class="listing-title-link" id="${product["item_id"]}">${product["item_title"]}</a>
             <p>$${product["unit_price"]}</p>
-            <button type="button" class="btn btn-primary">Add To Cart</button>
         `;
 
         container.appendChild(card);
+        const link = document.getElementById(itemId);
+
+        link.addEventListener('click', ()=>{
+        //a) Read the value of the show id custom attribute        
+        //b) Save it into local storage
+        //c) Redirect user to the details page
+        });
     });
 }
