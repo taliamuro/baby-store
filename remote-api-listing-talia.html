@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" data-page="cart">
+<html lang="en" data-page="remote-api-listing">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart</title>
+    <title>Product Details</title>
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,79 +24,22 @@
                 <li><a href="home.html" class="nav-button">Home</a></li>
                 <li><a href="contact.html" class="nav-button">Contact</a></li>
                 <li><a href="product-listing.html" class="nav-button">Products</a></li>
-                <li><a href="remote-api-listing-talia.html" class="nav-button">Talia</a></li>
+                <li><a href="remote-api-listing-talia.html" class="nav-button" id="current-page">Talia</a></li>
                 <li><a href="remote-api-listing.html" class="nav-button">Mariam</a></li>
                 <li><div class="container-fluid">
                     <form class="d-flex" role="search">
                       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                       <button class="nav-button" type="submit">Search</button>
                     </form></div>
-                </li>                
-                <li><a href="cart.html"><img src="images/cart.svg" alt="Shopping Cart"></a></li>
+                </li>                <li><a href="cart.html"><img src="images/cart.svg" alt="Shopping Cart"></a></li>
                 <li><a href="login.html"><img src="images/person-circle.svg" alt="Login"></a></li>
             </ul>
         </nav>
     </div>
 
-    <div id="cart-page-content" class="page-content">
-        <table id="ordered-products-table">
-            <!-- <tr>
-                <td>
-                    <img src="https://image.hm.com/assets/hm/9b/70/9b70f3d0d0c3260c648c33a3b660f1c2179aaf10.jpg?imwidth=1260" alt="Featured Item 2" height="220" width="145" class="featured-items">
-                </td>
-                <td class="cart-description">
-                    <p><b>Featured Item 2</b></p>
-                    <p>Colour</p>
-                    <p>Size</p>
-                    <p>Price</p>
-                </td>
-                <td>
-                    <div class="cart-quantity">
-                        <button class="remove-button">
-                            <img src="images/trash.svg" alt="">
-                        </button>
-                        <input class="quantity" type="text" value="1" size="1">
-                        <button class="add-button">
-                            <img src="images/plus.svg" alt="">
-                        </button>
-                    </div>
-                </td>
-            </tr> -->
-        </table>
-
-        <br>
-
-        <table id="order-summary">
-            <tr>
-                <td class="amount-descr"><h2>Order Summary</h2></td>
-                <td class="amount"></td>
-            </tr>
-            <tr>
-                <td class="amount-descr">Subtotal</td>
-                <td class="amount">$0.00</td>
-            </tr>
-            <tr>
-                <td class="amount-descr">Shipping</td>
-                <td class="amount">Free</td>
-            </tr>
-            <tr>
-                <td class="amount-descr">Tax</td>
-                <td class="amount">$0.00</td>
-            </tr>
-            <tr>
-                <td class="amount-descr">Total</td>
-                <td class="amount">$0.00</td>
-            </tr>
-
-            <tr>
-                <td></td>
-                <td>
-                    <a href="order-confirmation.html"><button type="button" class="btn btn-primary">Place Order</button></a>
-
-                </td>
-            </tr>
-        </table>
-
+    <div class="page-content">
+        <h2>Products</h2>
+        <div id="product-container"></div>
     </div>
 
     <!-- Footer with links -->

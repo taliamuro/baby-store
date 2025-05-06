@@ -9,6 +9,7 @@ import {initProductListing} from "./modules/productListing.js";
 import {fetchData} from "./modules/fetchWrapper.js";
 import {initRemoteAPIListing} from "./modules/remoteAPIListing.js";
 import { initMapView } from "./modules/map.js";
+import { initRemoteAPIListingTalia } from "./modules/remoteAPIListingTalia.js";
 
 // Ensure that the document is fully loaded and parsed
 document.addEventListener('DOMContentLoaded', initApp);
@@ -46,6 +47,8 @@ function initApp() {
             break;
         case "remote-api-listing":
             initRemoteAPIListing();
+        case "remote-api-listing-talia":
+            initRemoteAPIListingTalia();
         default:
             break;
     }
