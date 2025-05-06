@@ -2,7 +2,7 @@
 
 export function initProductListing() {
     fetchProductsfromCatalog();
-    fetchProductsfromAPI();
+    // fetchProductsfromAPI();
 }
 
 export async function fetchProductsfromCatalog() {
@@ -33,20 +33,6 @@ export async function fetchProductsfromCatalog() {
 export function parseProducts(products) {
     const container = document.getElementById("product-container");
     
-    // products.forEach((product, index) => {
-    //     const card = document.createElement("div");//add a section
-    //     card.className = "product-card";//We need a class name to style it
-        
-    //     const imageSrc = "images/placeholder-image.jpeg";//Adding placeholder image
-    //     // <h5><a class="listing-description-preview" href="product-details.html?id=${index}">${product["item_title"].length > 20 ? product["item_title"].substring(0,20) + '...' : product["item_title"]}</h5>
-    //     card.innerHTML = `
-    //         <img src="${product["thumbnail_img"] || 'https://via.placeholder.com/300x200'}" alt="${product["item-title"]}" height="350">
-    //         <h5><a class="listing-description-preview">${product["item_title"].length > 20 ? product["item_title"].substring(0,20) + '...' : product["item_title"]}</h5>
-    //         <p>Unit Price: </p>
-    //     `;
-    //     container.appendChild(card);
-    //     const link = document.getElementsByClassName()
-    //});
     products.forEach(product => {
         const card = document.createElement("div");
         card.className = "product-card";
@@ -69,10 +55,11 @@ export function parseProducts(products) {
             // console.log("link: " + link.item_title); //undefined
             // console.log(product.item_title);
         //b) Save it into local storage
-        localStorage.setItem('clickedItem', product.item_title);
-        console.log(localStorage.getItem('clickedItem'));
+        localStorage.setItem('clickedProduct', JSON.stringify(product));
+        const storedProduct = JSON.parse(localStorage.getItem('clickedProduct'));
+        console.log(storedProduct.item_title);
         //c) Redirect user to the details page
-        link.setAttribute("href", "product-details.html")
+        link.setAttribute("href", "product-details.html");
         });
     });
 }
