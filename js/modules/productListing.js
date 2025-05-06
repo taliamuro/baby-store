@@ -37,7 +37,7 @@ export function parseProducts(products) {
         const card = document.createElement("div");
         card.className = "product-card";
         
-        const imageSrc = (product.images && product.images.length > 0) ? product.images[0] : "images/placeholder-image.jpeg";
+        // const imageSrc = (product.images && product.images.length > 0) ? product.images[0] : "images/placeholder-image.jpeg";
 
         const itemId = product.item_id;
 

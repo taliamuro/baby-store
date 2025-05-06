@@ -13,7 +13,19 @@ export function initProductDetails() {
         <p>$${storedProduct["unit_price"]}</p>
         <h5>Description</h5>
         <p>${storedProduct["description"]}</p>
-        <button type="button" class="btn btn-primary" id="add-to-cart-btn">Add To Cart</button>
+        <a id="add-to-cart-link"><button type="button" class="btn btn-primary" id="add-to-cart-btn">Add To Cart</button></a>
         </div>
         `;
+
+    const link = document.getElementById("add-to-cart-link");
+
+    link.addEventListener('click', ()=>{
+
+    //store product in cart as a cart item
+    localStorage.setItem('cartItem', JSON.stringify(storedProduct));  
+
+    //Redirect user
+    link.setAttribute("href", "cart.html");
+    });        
 }
+
