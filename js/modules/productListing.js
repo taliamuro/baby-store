@@ -66,9 +66,13 @@ export function parseProducts(products) {
 
         link.addEventListener('click', ()=>{
         //a) Read the value of the show id custom attribute   
-             
+            // console.log("link: " + link.item_title); //undefined
+            // console.log(product.item_title);
         //b) Save it into local storage
+        localStorage.setItem('clickedItem', product.item_title);
+        console.log(localStorage.getItem('clickedItem'));
         //c) Redirect user to the details page
+        link.setAttribute("href", "product-details.html")
         });
     });
 }

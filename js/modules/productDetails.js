@@ -1,7 +1,7 @@
 // ES Module for implementing the product details logic
 
 export function initProductDetails() {
-    document.addEventListener("DOMContentLoaded", async () => {
+    document.ad  dEventListener("DOMContentLoaded", async () => {
         const params = new URLSearchParams(window.location.search);
         const id = parseInt(params.get("id"));
 
@@ -37,5 +37,6 @@ export function initProductDetails() {
             console.error("Failed to load product:", error);
             document.getElementById("product-detail-container").innerHTML = "<p>Product not found.</p>";
         }
+        // console.log(localStorage.getItem('clickedItem')); //Works
     });
 }
