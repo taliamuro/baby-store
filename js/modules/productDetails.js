@@ -1,6 +1,11 @@
 // ES Module for implementing the product details logic
 
 export function initProductDetails() {
+    const index=0;
+
+    let cartItems = [];
+    localStorage.setItem('cart-items', JSON.stringify(cartItems));
+
     const container = document.getElementById("product-detail-container");
 
     const storedProduct = JSON.parse(localStorage.getItem('clickedProduct'));
@@ -20,12 +25,12 @@ export function initProductDetails() {
     const link = document.getElementById("add-to-cart-link");
 
     link.addEventListener('click', ()=>{
-
     //store product in cart as a cart item
-    localStorage.setItem('cartItem', JSON.stringify(storedProduct));  
-
+    localStorage.setItem('cartItem', JSON.stringify(storedProduct)); 
+    localStorage.setItem('cart-items'[index], JSON.stringify(storedProduct)); 
+    index++;
     //Redirect user
     link.setAttribute("href", "cart.html");
-    });        
+    });  
 }
 

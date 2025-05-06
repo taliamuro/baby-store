@@ -6,17 +6,17 @@ export function initProductListing() {
 }
 
 export async function fetchProductsfromCatalog() {
-    console.log("Fetching products from catalog...");
+    // console.log("Fetching products from catalog...");
     
     try {
         const response = await fetch('data/catalog.json');
         const data = await response.json();
         
-        console.log("Fetched data:", data);
+        // console.log("Fetched data:", data);
 
         const products = data.products;
 
-        console.log("Fetched products:", products);
+        // console.log("Fetched products:", products);
         
 
         if (Array.isArray(products)) {
