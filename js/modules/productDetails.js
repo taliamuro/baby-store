@@ -1,9 +1,8 @@
 // ES Module for implementing the product details logic
-
 export function initProductDetails() {
 
     let cartItems = JSON.parse(localStorage.getItem('cart-items'));
-
+    
     const container = document.getElementById("product-detail-container");
 
     const storedProduct = JSON.parse(localStorage.getItem('clickedProduct'));
@@ -11,7 +10,7 @@ export function initProductDetails() {
     console.log("Displayed product: " + storedProduct.item_title);
 
     container.innerHTML = `
-        <img src="${storedProduct["thumbnail_img"] || 'https://via.placeholder.com/300x200'}" alt="${storedProduct["item-title"]}" height="250" width="190">
+        <img src="${storedProduct["thumbnail_img"]}" alt="${storedProduct["item-title"]}" height="250" width="190">
         <div id="product-description">
         <h2>${storedProduct["item_title"]}</h2>
         <p>$${storedProduct["unit_price"]}</p>
@@ -25,16 +24,18 @@ export function initProductDetails() {
 
     link.addEventListener('click', ()=>{
 
-    //store product in cart as a cart item
-    const cartItem = JSON.stringify(storedProduct); 
-    cartItems.push(cartItem);
+    // const cartItem = JSON.stringify(storedProduct); 
+
+    // Store product in cart as a cart item:
+
+    cartItems.push(storedProduct);
     localStorage.setItem('cart-items', JSON.stringify(cartItems));
 
     console.log("Cart products: " + cartItems.length);
 
-    //Redirect user
-    link.setAttribute("href", "cart.html");
+    //  Redirect user
+    //  link.setAttribute("href", "cart.html");
 
-    });  
-}
+    });   
+} 
 
