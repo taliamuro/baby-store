@@ -1,41 +1,41 @@
 // ES Module for implementing the cart logic
 
 export function initCart() {
+	
 	let cartItems = JSON.parse(localStorage.getItem('cart-items'));
 
     const container = document.getElementById("ordered-products-table");
 
-    const cartProduct = JSON.parse(localStorage.getItem('cartItem'));
-    console.log("Product in cart: " + cartProduct.item_title);
-
+    // const cartProduct = JSON.parse(localStorage.getItem('cartItem'));
+    // console.log("Product in cart: " + cartProduct.item_title);
 
 	
-    container.innerHTML = `
-			<tr>
-				<td>
-			<img src="${cartProduct["thumbnail_img"]}" height="220" width="145" class="featured-items">
-				</td>
-				<td>
-			<div class="cart-description">
-				<p><b>${cartProduct["item_title"]}</b></p>
-				<p>Colour</p>
-				<p>Size</p>
-				<p>Price: $${cartProduct["unit_price"]}</p>
-			</div>
-				</td>
-				<td>
-			<div class="cart-quantity">
-				<button class="remove-button">
-					<img src="images/trash.svg" alt="">
-				</button>
-				<input class="quantity" type="text" value="1" size="1">
-				<button class="add-button">
-					<img src="images/plus.svg" alt="">
-				</button>
-			</div>
-				</td>
-			</tr>
-    `;
+    // container.innerHTML = `
+	// 		<tr>
+	// 			<td>
+	// 		<img src="${cartProduct["thumbnail_img"]}" height="220" width="145" class="featured-items">
+	// 			</td>
+	// 			<td>
+	// 		<div class="cart-description">
+	// 			<p><b>${cartProduct["item_title"]}</b></p>
+	// 			<p>Colour</p>
+	// 			<p>Size</p>
+	// 			<p>Price: $${cartProduct["unit_price"]}</p>
+	// 		</div>
+	// 			</td>
+	// 			<td>
+	// 		<div class="cart-quantity">
+	// 			<button class="remove-button">
+	// 				<img src="images/trash.svg" alt="">
+	// 			</button>
+	// 			<input class="quantity" type="text" value="1" size="1">
+	// 			<button class="add-button">
+	// 				<img src="images/plus.svg" alt="">
+	// 			</button>
+	// 		</div>
+	// 			</td>
+	// 		</tr>
+    // `;
 
 
 	cartItems.forEach(cartItem => {

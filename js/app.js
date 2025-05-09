@@ -14,6 +14,9 @@ import { initRemoteAPIListingTalia } from "./modules/remoteAPIListingTalia.js";
 // Ensure that the document is fully loaded and parsed
 document.addEventListener('DOMContentLoaded', initApp);
 
+let cartItems = [];
+localStorage.setItem('cart-items', JSON.stringify(cartItems));
+
 function initApp() {
     console.log("Initializing the app...");
     
