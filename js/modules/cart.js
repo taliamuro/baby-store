@@ -1,5 +1,4 @@
 // ES Module for implementing the cart logic
-
 export function initCart() {
 
 	loadCartItems();
@@ -9,26 +8,40 @@ export function initCart() {
 	const deleteItembtns = Array.from(document.getElementsByClassName('remove-button'));
 	
 	deleteItembtns.forEach(deleteItembtn => {
-
 			deleteItembtn.addEventListener('click', () => {
-			
-			let cartItems = JSON.parse(localStorage.getItem('cart-items'));
+				let cartItems = JSON.parse(localStorage.getItem('cart-items'));
 
-			//Get the id of the button and extract the item's ID	
-			const itemId = deleteItembtn.id.substring(12); //id = remove-item-${cartItem["item_id"]}
+				//Get the id of the button and extract the item's ID	
+				const itemId = deleteItembtn.id.substring(12); //id = remove-item-${cartItem["item_id"]}
 
-			//Set the new array without the item to delete
-			const newCartItems = cartItems.filter(item => item.item_id != itemId);
-			localStorage.setItem('cart-items', JSON.stringify(newCartItems));
+				//Get the index for the qtt update
+				const itemIdx = cartItems.findIndex(item => item.item_id == itemId);
 
+				let qttInCart = cartItems[itemIdx].qty_to_buy;
 
-			//Clear the products from the page
-			const container = document.getElementById("ordered-products-table");
-			container.innerHTML = ``;
+				//If the quantity of the product to buy is > 1, only only decrease the qtt to buy:
+				if(qttInCart > 1) 
+				{
+					cartItems[itemIdx].qty_to_buy -= 1;
+					localStorage.setItem('cart-items', JSON.stringify(cartItems));
+				} 
+				
+				//Else, remove the item from the cart listing:
+				else
+				{
+				//Set the new array without the item to delete
+				const newCartItems = cartItems.filter(item => item.item_id != itemId);
+				localStorage.setItem('cart-items', JSON.stringify(newCartItems));
 
-			//Reload the products in the page with updates
-			initCart();
-		});
+				}
+
+				//Clear the products from the page
+				const container = document.getElementById("ordered-products-table");
+				container.innerHTML = ``;
+				
+				//Reload the products in the page with updates
+				initCart();
+			});
 	});
 	
 	const plusButtons = Array.from(document.getElementsByClassName('add-button'));
@@ -39,16 +52,13 @@ export function initCart() {
 			const itemId = plusBtn.id.substring(19);
 
 			const qtt = document.getElementById(`increment-item-value-${itemId}`);
-
 			
 		});
 	});
 } 
 
-
 function loadCartItems() {
 	let cartItems = JSON.parse(localStorage.getItem('cart-items'));
-
 
     const container = document.getElementById("ordered-products-table");
 
@@ -79,7 +89,5 @@ function loadCartItems() {
 		</tr>
 	`;
 	}); 
-
 	console.log("Cart Size: " + cartItems.length); 
-
 }
