@@ -25,7 +25,7 @@ export function initCart() {
 					cartItems[itemIdx].qty_to_buy -= 1;
 					localStorage.setItem('cart-items', JSON.stringify(cartItems));
 				} 
-				
+
 				//Else, remove the item from the cart listing:
 				else
 				{
@@ -48,12 +48,35 @@ export function initCart() {
 
 	plusButtons.forEach(plusBtn => {
 		plusBtn.addEventListener('click', () => {
-			
+			let cartItems = JSON.parse(localStorage.getItem('cart-items'));
+
+			//Get the id of the button and extract the item's ID	
 			const itemId = plusBtn.id.substring(19);
 
-			const qtt = document.getElementById(`increment-item-value-${itemId}`);
+			//Get the index for the qtt update
+			const itemIdx = cartItems.findIndex(item => item.item_id == itemId);
+
+			cartItems[itemIdx].qty_to_buy += 1;
+			localStorage.setItem('cart-items', JSON.stringify(cartItems));	
 			
+			//Clear the products from the page
+			const container = document.getElementById("ordered-products-table");
+			container.innerHTML = ``;
+			
+			//Reload the products in the page with updates
+			initCart();
 		});
+	});
+
+	//href="order-confirmation.html"
+	const placeOrderBtn = document.getElementById('place-order-btn');
+
+	placeOrderBtn.addEventListener('click', () => {
+		let cartItems = JSON.parse(localStorage.getItem('cart-items'));
+		
+
+		//Redirect to the order confirmation page:
+		placeOrderBtn.setAttribute("href", "order-confirmation.html");
 	});
 } 
 
