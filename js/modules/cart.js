@@ -69,14 +69,25 @@ export function initCart() {
 	});
 
 	//href="order-confirmation.html"
-	const placeOrderBtn = document.getElementById('place-order-btn');
+	const placeOrderLink = document.getElementById('place-order-link');
 
-	placeOrderBtn.addEventListener('click', () => {
+	placeOrderLink.addEventListener('click', () => {
 		let cartItems = JSON.parse(localStorage.getItem('cart-items'));
-		
+		let canBuy = true;
+
+		cartItems.forEach(cartItem => {
+			if(cartItem.qty_to_buy > cartItem.qty_in_stock) {
+				console.log("Cannot order the quantity you need, we only have: " + cartItem.qty_in_stock);
+				canBuy = false;
+			}
+		});
 
 		//Redirect to the order confirmation page:
-		placeOrderBtn.setAttribute("href", "order-confirmation.html");
+		if(canBuy) {
+			placeOrderLink.setAttribute("href", "order-confirmation.html");
+		} else {
+			console.log("can't buy");
+		}
 	});
 } 
 
