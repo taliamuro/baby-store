@@ -45,7 +45,8 @@
             "unit_price": 12.99,
             "qty_in_stock": 1,
             "thumbnail_img": "./images/applique-t-shirt.avif",
-            "gender": "girl"
+            "gender": "girl",
+            "qty_to_buy":0
         },
 
         {
@@ -57,7 +58,8 @@
             "unit_price": 19.99,
             "qty_in_stock": 1,
             "thumbnail_img": "https://image.hm.com/assets/hm/aa/5e/aa5e5816bd58e3f3ef33c6508725aae4b82c7244.jpg?imwidth=1260",
-            "gender": "girl"
+            "gender": "girl",
+            "qty_to_buy":0
         },
         
         {
@@ -69,7 +71,8 @@
             "unit_price": 27.99,
             "qty_in_stock": 1,
             "thumbnail_img": "https://image.hm.com/assets/hm/7a/3d/7a3d7d4a1ac25b4dc0d6fe299f8a1f61a40c53fd.jpg?imwidth=1260",
-            "gender": "girl"
+            "gender": "girl",
+            "qty_to_buy":0
         },
         
         {
@@ -81,7 +84,8 @@
             "unit_price": 21.99,
             "qty_in_stock": 1,
             "thumbnail_img": "https://image.hm.com/assets/hm/5a/8c/5a8ca55f88bd51f8ca6dc2bfd552cf68388af2b5.jpg?imwidth=1260",
-            "gender": "girl"
+            "gender": "girl",
+            "qty_to_buy":0
         },
         
         {
@@ -93,7 +97,8 @@
             "unit_price": 14.99,
             "qty_in_stock": 1,
             "thumbnail_img": "https://image.hm.com/assets/hm/f0/08/f0080f7fd40e8085aed385c7f4fd7e15bbbb6aa7.jpg?imwidth=1260",
-            "gender": "girl"
+            "gender": "girl",
+            "qty_to_buy":0
         },
         
         {
@@ -105,7 +110,8 @@
             "unit_price": 12.99,
             "qty_in_stock": 1,
             "thumbnail_img": "https://image.hm.com/assets/hm/b9/d3/b9d3ff337723137f9799e0d7045e83b1807f25e2.jpg?imwidth=1260",
-            "gender": "boy"
+            "gender": "boy",
+            "qty_to_buy":0
         },
         
         {
@@ -117,7 +123,8 @@
             "unit_price": 14.99,
             "qty_in_stock": 1,
             "thumbnail_img": "https://image.hm.com/assets/hm/9e/4d/9e4de8f659dc38d9574bcdedac55a02ebf531ce9.jpg?imwidth=1260",
-            "gender": "boy"
+            "gender": "boy",
+            "qty_to_buy":0
         },
         
         {
@@ -129,7 +136,8 @@
             "unit_price": 24.99,
             "qty_in_stock": 1,
             "thumbnail_img": "https://image.hm.com/assets/hm/e9/51/e951ba99a2e115a8fe09af2f0a458c64aa200563.jpg?imwidth=1260",
-            "gender": "boy"
+            "gender": "boy",
+            "qty_to_buy":0
         },
         
         {
@@ -141,7 +149,8 @@
             "unit_price": 44.99,
             "qty_in_stock": 1,
             "thumbnail_img": "https://image.hm.com/assets/hm/34/5b/345b3680f918835c663438ad26779fac472078a6.jpg?imwidth=1260",
-            "gender": "girl"
+            "gender": "girl",
+            "qty_to_buy":0
         },
         
         {
@@ -153,7 +162,8 @@
             "unit_price": 35.99,
             "qty_in_stock": 1,
             "thumbnail_img": "https://image.hm.com/assets/hm/7c/a0/7ca0ef0f0f4a8fcb92bde801b535f6e584b9f30e.jpg?imwidth=1260",
-            "gender": "girl"
+            "gender": "girl",
+            "qty_to_buy":0
         },
         
         {
@@ -165,7 +175,8 @@
             "unit_price": 35.99,
             "qty_in_stock": 1,
             "thumbnail_img": "https://image.hm.com/assets/hm/e0/43/e0430f34b91b462d36a72c96c8c311ddfd77f8ec.jpg?imwidth=1260",
-            "gender": "girl"
+            "gender": "girl",
+            "qty_to_buy":0
         },
         
         {
@@ -177,7 +188,8 @@
             "unit_price": 19.99,
             "qty_in_stock": 1,
             "thumbnail_img": "https://image.hm.com/assets/hm/fc/70/fc703174d5c243fb01fd1fc99c9bb38041557dc1.jpg?imwidth=1260",
-            "gender": "girl"
+            "gender": "girl",
+            "qty_to_buy":0
         },
         
         {
@@ -189,7 +201,8 @@
             "unit_price": 45.99,
             "qty_in_stock": 1,
             "thumbnail_img": "https://image.hm.com/assets/hm/b5/c5/b5c5df8344ef34902e056e263defc602be46a6c4.jpg?imwidth=1260",
-            "gender": "boy"
+            "gender": "boy",
+            "qty_to_buy":0
         },
         
         {
@@ -201,7 +214,8 @@
             "unit_price": 19.99,
             "qty_in_stock": 1,
             "thumbnail_img": "https://image.hm.com/assets/hm/7e/a8/7ea8c544ebf2c1edcd1a12e473264874fe0b86d5.jpg?imwidth=1260",
-            "gender": "boy"
+            "gender": "boy",
+            "qty_to_buy":0
         },
         
         {
@@ -213,7 +227,8 @@
             "unit_price": 29.99,
             "qty_in_stock": 1,
             "thumbnail_img": "https://image.hm.com/assets/hm/18/0a/180a76dc34303309f972e24d6ba38f8654755147.jpg?imwidth=1260",
-            "gender": "boy"
+            "gender": "boy",
+            "qty_to_buy":0
         },
         
         {
@@ -225,7 +240,8 @@
             "unit_price": 19.99,
             "qty_in_stock": 1,
             "thumbnail_img": "https://image.hm.com/assets/hm/76/da/76dad59cbda77d608b669c705ede4bdc4f972b12.jpg?imwidth=1260",
-            "gender": "boy"
+            "gender": "boy",
+            "qty_to_buy":0
         },
         
         {
@@ -237,7 +253,8 @@
             "unit_price": 9.99,
             "qty_in_stock": 1,
             "thumbnail_img": "https://image.hm.com/assets/hm/bd/9b/bd9bfc01631a4419443e5fc70f9b6ee10938ad42.jpg?imwidth=1260",
-            "gender": "girl"
+            "gender": "girl",
+            "qty_to_buy":0
         },
         
         {
@@ -249,7 +266,8 @@
             "unit_price": 9.99,
             "qty_in_stock": 1,
             "thumbnail_img": "https://image.hm.com/assets/hm/44/e3/44e3223003620e1331f2d330937cdbbbf1b18ae6.jpg?imwidth=1260",
-            "gender": "girl"
+            "gender": "girl",
+            "qty_to_buy":0
         },
         
         {
@@ -261,7 +279,8 @@
             "unit_price": 14.99,
             "qty_in_stock": 1,
             "thumbnail_img": "https://image.hm.com/assets/hm/22/5b/225bfe44efff3b7fbc8e10fec50be71ee7f48770.jpg?imwidth=1260",
-            "gender": "girl"
+            "gender": "girl",
+            "qty_to_buy":0
         },
         
         {
@@ -273,7 +292,8 @@
             "unit_price": 9.99,
             "qty_in_stock": 1,
             "thumbnail_img": "https://image.hm.com/assets/hm/9b/70/9b70f3d0d0c3260c648c33a3b660f1c2179aaf10.jpg?imwidth=1260",
-            "gender": "girl"
+            "gender": "girl",
+            "qty_to_buy":0
         },
         
         {
@@ -285,7 +305,8 @@
             "unit_price": 12.99,
             "qty_in_stock": 1,
             "thumbnail_img": "https://image.hm.com/assets/hm/0c/90/0c90ec372dfb8f9754a98f91b221f9dbb8f7324b.jpg?imwidth=2160",
-            "gender": "boy"
+            "gender": "boy",
+            "qty_to_buy":0
         },
         
         {
@@ -297,7 +318,8 @@
             "unit_price": 9.99,
             "qty_in_stock": 1,
             "thumbnail_img": "https://image.hm.com/assets/hm/b8/31/b83149db4162bac688e05307e1bdb0dff2155255.jpg?imwidth=1260",
-            "gender": "boy"
+            "gender": "boy",
+            "qty_to_buy":0
         },
         
         {
@@ -309,7 +331,8 @@
             "unit_price": 12.99,
             "qty_in_stock": 1,
             "thumbnail_img": "https://image.hm.com/assets/hm/c6/3d/c63d41d33beeaf9c02217e7c78ab5878cb2c347a.jpg?imwidth=1260",
-            "gender": "boy"
+            "gender": "boy",
+            "qty_to_buy":0
         },
         
         {
@@ -321,7 +344,8 @@
             "unit_price": 19.99,
             "qty_in_stock": 1,
             "thumbnail_img": "https://image.hm.com/assets/hm/e4/f2/e4f23e2acdddfdea8a861ace9d4f998248a6b66d.jpg?imwidth=1260",
-            "gender": "boy"
+            "gender": "boy",
+            "qty_to_buy":0
         },
         
         {
@@ -333,7 +357,8 @@
             "unit_price": 24.99,
             "qty_in_stock": 1,
             "thumbnail_img": "https://image.hm.com/assets/hm/6b/f5/6bf57880d029d7ec8158cfbe4028568a6c265b82.jpg?imwidth=1260",
-            "gender": "girl"
+            "gender": "girl",
+            "qty_to_buy":0
         },
         
         {
@@ -345,7 +370,8 @@
             "unit_price": 21.99,
             "qty_in_stock": 1,
             "thumbnail_img": "https://image.hm.com/assets/hm/ad/62/ad624bd8e9bcfeba9429aa28aee6bdea1621b7c8.jpg?imwidth=1260",
-            "gender": "girl"
+            "gender": "girl",
+            "qty_to_buy":0
         },
         
         {
@@ -357,7 +383,8 @@
             "unit_price": 24.99,
             "qty_in_stock": 1,
             "thumbnail_img": "https://image.hm.com/assets/hm/e8/1b/e81b49432d5e4803ce513c8d0fee8ecd2477467e.jpg?imwidth=1260",
-            "gender": "girl"
+            "gender": "girl",
+            "qty_to_buy":0
         },
         
         {
@@ -369,7 +396,8 @@
             "unit_price": 29.99,
             "qty_in_stock": 1,
             "thumbnail_img": "https://image.hm.com/assets/hm/7c/f7/7cf71d02215ffc6c06bc4aadbe8d8b2482f6463e.jpg?imwidth=1260",
-            "gender": "girl"
+            "gender": "girl",
+            "qty_to_buy":0
         },
         
         {
@@ -381,7 +409,8 @@
             "unit_price": 24.99,
             "qty_in_stock": 1,
             "thumbnail_img": "https://image.hm.com/assets/hm/2d/92/2d92df430ff2eb42b07fabf0f259b4ce97de5ccb.jpg?imwidth=1260",
-            "gender": "boy"
+            "gender": "boy",
+            "qty_to_buy":0
         },
         
         {
@@ -393,7 +422,8 @@
             "unit_price": 24.99,
             "qty_in_stock": 1,
             "thumbnail_img": "https://image.hm.com/assets/hm/6e/c4/6ec41624360ef56d8ef9211cc71354100958666d.jpg?imwidth=1260",
-            "gender": "boy"
+            "gender": "boy",
+            "qty_to_buy":0
         },
         
         {
@@ -405,7 +435,8 @@
             "unit_price": 12.99,
             "qty_in_stock": 1,
             "thumbnail_img": "https://image.hm.com/assets/hm/40/fb/40fbbdfef99f26a5a16cc6d8ac52b4d64a6e97ff.jpg?imwidth=1260",
-            "gender": "boy"
+            "gender": "boy",
+            "qty_to_buy":0
         },
         
         {
@@ -417,7 +448,8 @@
             "unit_price": 22.99,
             "qty_in_stock": 1,
             "thumbnail_img": "https://image.hm.com/assets/hm/f5/93/f59399e6b5fe1c74c09cb43500fd62c5e9f79736.jpg?imwidth=1260",
-            "gender": "boy"
+            "gender": "boy",
+            "qty_to_buy":0
         },
         
         {
@@ -429,7 +461,8 @@
             "unit_price": 24.99,
             "qty_in_stock": 1,
             "thumbnail_img": "https://image.hm.com/assets/hm/5f/e7/5fe7318b6acd8c6e91227a21131d0f8ffd7060ac.jpg?imwidth=1260",
-            "gender": "girl"
+            "gender": "girl",
+            "qty_to_buy":0
         },
         
         {
@@ -441,7 +474,8 @@
             "unit_price": 19.99,
             "qty_in_stock": 1,
             "thumbnail_img": "https://image.hm.com/assets/hm/00/f7/00f7105c52a346ee5d9052d95a9e2b0100ce9f64.jpg?imwidth=1260",
-            "gender": "girl"
+            "gender": "girl",
+            "qty_to_buy":0
         },
         
         {
@@ -453,7 +487,8 @@
             "unit_price": 19.99,
             "qty_in_stock": 1,
             "thumbnail_img": "https://image.hm.com/assets/hm/aa/76/aa76195ab7f7e14fe77e84cd014bcc46db529dbf.jpg?imwidth=1260",
-            "gender": "girl"
+            "gender": "girl",
+            "qty_to_buy":0
         },
         
         {
@@ -465,7 +500,8 @@
             "unit_price": 12.99,
             "qty_in_stock": 1,
             "thumbnail_img": "https://image.hm.com/assets/hm/a8/97/a89703c215ac243554d70c76e17cdfe08005f03d.jpg?imwidth=1260",
-            "gender": "girl"
+            "gender": "girl",
+            "qty_to_buy":0
         },
         
         {
@@ -477,7 +513,8 @@
             "unit_price": 14.99,
             "qty_in_stock": 1,
             "thumbnail_img": "https://image.hm.com/assets/hm/e2/e8/e2e8132080daf3edc8db7285b09c9c8df7e78022.jpg?imwidth=1260",
-            "gender": "boy"
+            "gender": "boy",
+            "qty_to_buy":0
         },
         
         {
@@ -489,7 +526,8 @@
             "unit_price": 19.99,
             "qty_in_stock": 1,
             "thumbnail_img": "https://image.hm.com/assets/hm/7b/ca/7bca33e68808df11fd78f1011304db2ca99a1258.jpg?imwidth=1260",
-            "gender": "boy"
+            "gender": "boy",
+            "qty_to_buy":0
         },
         
         {
@@ -501,7 +539,8 @@
             "unit_price": 14.99,
             "qty_in_stock": 1,
             "thumbnail_img": "https://image.hm.com/assets/hm/05/15/0515bcb54d8f434551f7bc4a01baf90c95b74d45.jpg?imwidth=2160",
-            "gender": "boy"
+            "gender": "boy",
+            "qty_to_buy":0
         },
         
         {
@@ -513,7 +552,8 @@
             "unit_price": 19.99,
             "qty_in_stock": 1,
             "thumbnail_img": "https://image.hm.com/assets/hm/8a/1a/8a1a8e802bb53cccbd7b4d1896ce7acd2c04305c.jpg?imwidth=1260",
-            "gender": "boy"
+            "gender": "boy",
+            "qty_to_buy":0
         }
     ]
 }
