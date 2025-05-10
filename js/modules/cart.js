@@ -30,8 +30,6 @@ export function initCart() {
 			initCart();
 		});
 	});
-
-	
 	
 	const plusButtons = Array.from(document.getElementsByClassName('add-button'));
 
@@ -41,13 +39,14 @@ export function initCart() {
 			const itemId = plusBtn.id.substring(19);
 
 			const qtt = document.getElementById(`increment-item-value-${itemId}`);
+
+			
 		});
 	});
 } 
 
 
 function loadCartItems() {
-
 	let cartItems = JSON.parse(localStorage.getItem('cart-items'));
 
 
@@ -62,7 +61,6 @@ function loadCartItems() {
 			<td>
 		<div class="cart-description">
 			<p><b>${cartItem["item_title"]}</b></p>
-			<p>Colour</p>
 			<p>Size</p> 
 			<p>Price: $${cartItem["unit_price"]}</p>
 		</div>
@@ -72,7 +70,7 @@ function loadCartItems() {
 			<button class="remove-button" id="remove-item-${cartItem["item_id"]}"> 
 				<img src="images/trash.svg" alt=""> 
 			</button>
-			<input class="quantity" id="increment-item-value-${cartItem["item_id"]}" type="text" value="1" size="1">
+			<input class="quantity" id="increment-item-value-${cartItem["item_id"]}" type="text" value="${cartItem["qty_to_buy"]}" size="1">
 			<button class="add-button" id="increment-item-btn-${cartItem["item_id"]}">
 				<img src="images/plus.svg" alt="">
 			</button>
@@ -85,4 +83,3 @@ function loadCartItems() {
 	console.log("Cart Size: " + cartItems.length); 
 
 }
-

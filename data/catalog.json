@@ -557,3 +557,563 @@
         }
     ]
 }
+{
+    "gender": [
+        ["girl", "boy"]
+    ],
+    
+    "categories": [
+        {
+            "category_id": 1,
+            "category_name": "Clothing",
+            "description": "Tops, Bottoms, Dresses, Sweaters, & more"
+        },
+
+        {
+            "category_id": 2,
+            "category_name": "Outerwear",
+            "description": "Jackets & Coats"
+        },
+
+        {
+            "category_id": 3,
+            "category_name": "Accessories",
+            "description": "Hats, Scarves, Gloves, Glasses, Bandanas & more"
+        },
+
+        {
+            "category_id": 4,
+            "category_name": "Shoes",
+            "description": "Boots, Sneakers, Slippers, Sandals, & Flip-Flops"
+        },
+
+        {
+            "category_id": 5,
+            "category_name": "Swimwear",
+            "description": "Suits, Sunhats, Coverups, Towels, & more"
+        }
+    ],
+
+    "products": [
+        {
+            "item_id": 1,
+            "category_id": 1,
+            "item_title": "Applique T-Shirt",
+            "description": "T-shirt in soft cotton jersey with crochet-look appliques at front. This cream-colored T-shirt features a unique twist detail at the front, adding a touch of interest to its classic design. The round neckline and short sleeves contribute to its casual and comfortable fit. Crafted from soft fabric, it ensures breathability and ease of movement. The slim fit provides a flattering silhouette, making it suitable for various occasions. Versatile and stylish, it pairs well with jeans, skirts, or shorts.",
+            "color": "White",
+            "unit_price": 12.99,
+            "qty_in_stock": 1,
+            "thumbnail_img": "./images/applique-t-shirt.avif",
+            "gender": "girl",
+            "qty_to_buy":0
+        },
+
+        {
+            "item_id": 2,
+            "category_id": 1,
+            "item_title": "Embroidered Jeans",
+            "description": "Jeans in soft denim with an embroidered motif at front. These black-coated skinny jeans are designed to sculpt and flatter the figure, providing a sleek and modern look. The regular waist ensures a comfortable fit, while the stretchy fabric allows for freedom of movement. The coated finish adds a subtle sheen, elevating the classic denim style. Ideal for both casual and dressed-up occasions, they pair well with various tops and footwear. Durable and versatile, these jeans are a wardrobe staple.",
+            "color": "Blue",
+            "unit_price": 19.99,
+            "qty_in_stock": 1,
+            "thumbnail_img": "https://image.hm.com/assets/hm/aa/5e/aa5e5816bd58e3f3ef33c6508725aae4b82c7244.jpg?imwidth=1260",
+            "gender": "girl",
+            "qty_to_buy":0
+        },
+        
+        {
+            "item_id": 3,
+            "category_id": 1,
+            "item_title": "Denim Overall Dress",
+            "description": "Overall dress in soft cotton denim with embroidered details at front. This cream-colored dress features voluminous sleeves adorned with intricate embroidery, adding a touch of femininity and flair. The round neckline and short length create a balanced silhouette, making it suitable for both day and evening wear. The lightweight fabric drapes gracefully, ensuring comfort throughout wear. Its versatile design allows for easy styling with accessories or outerwear. Perfect for casual outings or semi-formal events, it offers a blend of elegance and ease.",
+            "color": "Blue",
+            "unit_price": 27.99,
+            "qty_in_stock": 1,
+            "thumbnail_img": "https://image.hm.com/assets/hm/7a/3d/7a3d7d4a1ac25b4dc0d6fe299f8a1f61a40c53fd.jpg?imwidth=1260",
+            "gender": "girl",
+            "qty_to_buy":0
+        },
+        
+        {
+            "item_id": 4,
+            "category_id": 1,
+            "item_title": "Smocked Dress",
+            "description": "Dress in soft woven cotton. This cream and black A-line dress is crafted from a fine-knit fabric, offering a comfortable and flattering fit. The low-cut neckline and sleeveless design add a touch of elegance, making it suitable for various occasions. The A-line silhouette ensures ease of movement and a graceful drape. Its minimalist design allows for versatile styling with accessories or outerwear. Ideal for both day and evening wear, it combines style and comfort effortlessly.",
+            "color": "Yellow",
+            "unit_price": 21.99,
+            "qty_in_stock": 1,
+            "thumbnail_img": "https://image.hm.com/assets/hm/5a/8c/5a8ca55f88bd51f8ca6dc2bfd552cf68388af2b5.jpg?imwidth=1260",
+            "gender": "girl",
+            "qty_to_buy":0
+        },
+        
+        {
+            "item_id": 5,
+            "category_id": 1,
+            "item_title": "Hooded Jacket",
+            "description": "Hooded sweatshirt jacket with a soft, brushed inside. This beige activewear jacket features down insulation combined with ThermoMove™ technology, providing lightweight warmth and flexibility. The design includes a high collar and zip closure, enhancing its sporty and functional appeal. Ideal for outdoor activities or casual wear, it offers reliable protection against the elements. The neutral beige color ensures easy pairing with various outfits. Its innovative construction makes it a practical and stylish choice for colder weather.",
+            "color": "Pink",
+            "unit_price": 14.99,
+            "qty_in_stock": 1,
+            "thumbnail_img": "https://image.hm.com/assets/hm/f0/08/f0080f7fd40e8085aed385c7f4fd7e15bbbb6aa7.jpg?imwidth=1260",
+            "gender": "girl",
+            "qty_to_buy":0
+        },
+        
+        {
+            "item_id": 6,
+            "category_id": 1,
+            "item_title": "Short-sleeved Cotton Shirt",
+            "description": "Shirt in an airy, woven cotton fabric. This cream-colored shirt is crafted from a textured weave fabric, offering a unique tactile experience. The pointed collar and button-down front add classic detailing, while the yoke with pleats at the back enhances its tailored fit. Long sleeves with buttoned cuffs and a rounded hem complete the design. Suitable for both professional and casual settings, it pairs well with various bottoms. The versatile design allows for easy styling with accessories or outerwear.",
+            "color": "Blue",
+            "unit_price": 12.99,
+            "qty_in_stock": 1,
+            "thumbnail_img": "https://image.hm.com/assets/hm/b9/d3/b9d3ff337723137f9799e0d7045e83b1807f25e2.jpg?imwidth=1260",
+            "gender": "boy",
+            "qty_to_buy":0
+        },
+        
+        {
+            "item_id": 7,
+            "category_id": 1,
+            "item_title": "Cotton Chinos",
+            "description": "Chinos in soft cotton twill. This brown hybrid jacket combines the warmth of down with ThermoMove™ technology, providing lightweight insulation and flexibility. The design features a high collar and zip closure, enhancing its sporty and functional appeal. Ideal for outdoor activities or casual wear, it offers reliable protection against the elements. The neutral brown color ensures easy pairing with various outfits. Its innovative construction makes it a practical and stylish choice for colder weather.",
+            "color": "Beige",
+            "unit_price": 14.99,
+            "qty_in_stock": 1,
+            "thumbnail_img": "https://image.hm.com/assets/hm/9e/4d/9e4de8f659dc38d9574bcdedac55a02ebf531ce9.jpg?imwidth=1260",
+            "gender": "boy",
+            "qty_to_buy":0
+        },
+        
+        {
+            "item_id": 8,
+            "category_id": 1,
+            "item_title": "Oversized bouclé-knit cardigan",
+            "description": "Oversized cardigan in a soft, ribbed bouclé knit made from high-quality cotton. This cream-colored Henley top is crafted from a soft, fine-knit fabric, offering a comfortable and breathable wear. The round, rib-trimmed neckline features a button placket, adding a touch of detail to its minimalist design. Short, close-fitting sleeves and extra-wide ribbing at the cuffs and hem contribute to its modern aesthetic. The slim fit ensures a flattering silhouette, making it suitable for layering or wearing on its own. Versatile and stylish, it complements various outfits effortlessly.",
+            "color": "Beige",
+            "unit_price": 24.99,
+            "qty_in_stock": 1,
+            "thumbnail_img": "https://image.hm.com/assets/hm/e9/51/e951ba99a2e115a8fe09af2f0a458c64aa200563.jpg?imwidth=1260",
+            "gender": "boy",
+            "qty_to_buy":0
+        },
+        
+        {
+            "item_id": 9,
+            "category_id": 2,
+            "item_title": "Fluffy Coat",
+            "description": "Double-breasted coat in fluffy fabric. Designed for active lifestyles, this padded jacket utilizes ThermoMove™ technology to provide lightweight warmth and flexibility. Its streamlined silhouette ensures ease of movement, while the insulated padding offers reliable protection against the elements. The jacket's minimalist design includes a high collar and zip closure, enhancing its sporty appeal. Ideal for outdoor activities or casual wear, it combines performance with style. Available in a neutral light beige, it pairs effortlessly with various outfits.",
+            "color": "Grey",
+            "unit_price": 44.99,
+            "qty_in_stock": 1,
+            "thumbnail_img": "https://image.hm.com/assets/hm/34/5b/345b3680f918835c663438ad26779fac472078a6.jpg?imwidth=1260",
+            "gender": "girl",
+            "qty_to_buy":0
+        },
+        
+        {
+            "item_id": 10,
+            "category_id": 2,
+            "item_title": "Corduroy Puffer Jacket",
+            "description": "Padded jacket in soft, quilted corduroy with lining in warm fleece. This light beige, slim-fit jacket is crafted from soft, breathable linen, offering a relaxed yet refined silhouette. It features notched lapels, an open chest pocket, and two inner pockets for functionality. The single-breasted design is complemented by decorative cuff buttons and a back vent. Fully lined for comfort, it exudes a casual elegance suitable for various occasions. The fabric's natural texture adds character, making it a versatile addition to any wardrobe.",
+            "color": "Pink",
+            "unit_price": 35.99,
+            "qty_in_stock": 1,
+            "thumbnail_img": "https://image.hm.com/assets/hm/7c/a0/7ca0ef0f0f4a8fcb92bde801b535f6e584b9f30e.jpg?imwidth=1260",
+            "gender": "girl",
+            "qty_to_buy":0
+        },
+        
+        {
+            "item_id": 11,
+            "category_id": 2,
+            "item_title": "Pile Jacket",
+            "description": "Jacket in soft pile.",
+            "color": "Blue",
+            "unit_price": 35.99,
+            "qty_in_stock": 1,
+            "thumbnail_img": "https://image.hm.com/assets/hm/e0/43/e0430f34b91b462d36a72c96c8c311ddfd77f8ec.jpg?imwidth=1260",
+            "gender": "girl",
+            "qty_to_buy":0
+        },
+        
+        {
+            "item_id": 12,
+            "category_id": 2,
+            "item_title": "Hooded Puffer Jacket",
+            "description": "Quilted, padded jacket in woven fabric.",
+            "color": "White",
+            "unit_price": 19.99,
+            "qty_in_stock": 1,
+            "thumbnail_img": "https://image.hm.com/assets/hm/fc/70/fc703174d5c243fb01fd1fc99c9bb38041557dc1.jpg?imwidth=1260",
+            "gender": "girl",
+            "qty_to_buy":0
+        },
+        
+        {
+            "item_id": 13,
+            "category_id": 2,
+            "item_title": "Wool-Blend Pea Coat",
+            "description": "Double-breasted coat in a thick, felted, woven wool blend with cashmere content.",
+            "color": "Blue",
+            "unit_price": 45.99,
+            "qty_in_stock": 1,
+            "thumbnail_img": "https://image.hm.com/assets/hm/b5/c5/b5c5df8344ef34902e056e263defc602be46a6c4.jpg?imwidth=1260",
+            "gender": "boy",
+            "qty_to_buy":0
+        },
+        
+        {
+            "item_id": 14,
+            "category_id": 2,
+            "item_title": "Teddy Fleece Jacket",
+            "description": "Jacket in soft teddy fleece with jersey trim.",
+            "color": "Blue",
+            "unit_price": 19.99,
+            "qty_in_stock": 1,
+            "thumbnail_img": "https://image.hm.com/assets/hm/7e/a8/7ea8c544ebf2c1edcd1a12e473264874fe0b86d5.jpg?imwidth=1260",
+            "gender": "boy",
+            "qty_to_buy":0
+        },
+        
+        {
+            "item_id": 15,
+            "category_id": 2,
+            "item_title": "Padded Parka",
+            "description": "Padded parka in woven fabric with lining in soft, warm fleece.",
+            "color": "Grey",
+            "unit_price": 29.99,
+            "qty_in_stock": 1,
+            "thumbnail_img": "https://image.hm.com/assets/hm/18/0a/180a76dc34303309f972e24d6ba38f8654755147.jpg?imwidth=1260",
+            "gender": "boy",
+            "qty_to_buy":0
+        },
+        
+        {
+            "item_id": 16,
+            "category_id": 2,
+            "item_title": "Nylon Jacket",
+            "description": "Fleece-lined jacket in nylon.",
+            "color": "Blue",
+            "unit_price": 19.99,
+            "qty_in_stock": 1,
+            "thumbnail_img": "https://image.hm.com/assets/hm/76/da/76dad59cbda77d608b669c705ede4bdc4f972b12.jpg?imwidth=1260",
+            "gender": "boy",
+            "qty_to_buy":0
+        },
+        
+        {
+            "item_id": 17,
+            "category_id": 3,
+            "item_title": "Strawberry Sunglasses",
+            "description": "Sunglasses with frames, lenses, and sidepieces in plastic.",
+            "color": "Red",
+            "unit_price": 9.99,
+            "qty_in_stock": 1,
+            "thumbnail_img": "https://image.hm.com/assets/hm/bd/9b/bd9bfc01631a4419443e5fc70f9b6ee10938ad42.jpg?imwidth=1260",
+            "gender": "girl",
+            "qty_to_buy":0
+        },
+        
+        {
+            "item_id": 18,
+            "category_id": 3,
+            "item_title": "Cotton Muslin Sun Hat",
+            "description": "Sun hat in soft cotton muslin.",
+            "color": "Multi",
+            "unit_price": 9.99,
+            "qty_in_stock": 1,
+            "thumbnail_img": "https://image.hm.com/assets/hm/44/e3/44e3223003620e1331f2d330937cdbbbf1b18ae6.jpg?imwidth=1260",
+            "gender": "girl",
+            "qty_to_buy":0
+        },
+        
+        {
+            "item_id": 19,
+            "category_id": 3,
+            "item_title": "Appliqued Cotton Cap",
+            "description": "Cap in soft woven cotton.",
+            "color": "Pink",
+            "unit_price": 14.99,
+            "qty_in_stock": 1,
+            "thumbnail_img": "https://image.hm.com/assets/hm/22/5b/225bfe44efff3b7fbc8e10fec50be71ee7f48770.jpg?imwidth=1260",
+            "gender": "girl",
+            "qty_to_buy":0
+        },
+        
+        {
+            "item_id": 20,
+            "category_id": 3,
+            "item_title": "Flower-shaped Sunglasses",
+            "description": "Flower-shaped sunglasses in plastic with tinted, UV-protective lenses.",
+            "color": "Pink",
+            "unit_price": 9.99,
+            "qty_in_stock": 1,
+            "thumbnail_img": "https://image.hm.com/assets/hm/9b/70/9b70f3d0d0c3260c648c33a3b660f1c2179aaf10.jpg?imwidth=1260",
+            "gender": "girl",
+            "qty_to_buy":0
+        },
+        
+        {
+            "item_id": 21,
+            "category_id": 3,
+            "item_title": "Cotton Cap",
+            "description": "Cap in cotton twill.",
+            "color": "Blue",
+            "unit_price": 12.99,
+            "qty_in_stock": 1,
+            "thumbnail_img": "https://image.hm.com/assets/hm/0c/90/0c90ec372dfb8f9754a98f91b221f9dbb8f7324b.jpg?imwidth=2160",
+            "gender": "boy",
+            "qty_to_buy":0
+        },
+        
+        {
+            "item_id": 22,
+            "category_id": 3,
+            "item_title": "Round Sunglasses",
+            "description": "Round sunglasses in plastic with tinted, UV-protective lenses.",
+            "color": "Green",
+            "unit_price": 9.99,
+            "qty_in_stock": 1,
+            "thumbnail_img": "https://image.hm.com/assets/hm/b8/31/b83149db4162bac688e05307e1bdb0dff2155255.jpg?imwidth=1260",
+            "gender": "boy",
+            "qty_to_buy":0
+        },
+        
+        {
+            "item_id": 23,
+            "category_id": 3,
+            "item_title": "Sun Cap UPF 50",
+            "description": "Sun cap in UV-protective material with a visor at front.",
+            "color": "Green",
+            "unit_price": 12.99,
+            "qty_in_stock": 1,
+            "thumbnail_img": "https://image.hm.com/assets/hm/c6/3d/c63d41d33beeaf9c02217e7c78ab5878cb2c347a.jpg?imwidth=1260",
+            "gender": "boy",
+            "qty_to_buy":0
+        },
+        
+        {
+            "item_id": 24,
+            "category_id": 3,
+            "item_title": "Water-Repellent Mittens",
+            "description": "Mittens in windproof, water-repellent functional fabric with reflective trim.",
+            "color": "Blue",
+            "unit_price": 19.99,
+            "qty_in_stock": 1,
+            "thumbnail_img": "https://image.hm.com/assets/hm/e4/f2/e4f23e2acdddfdea8a861ace9d4f998248a6b66d.jpg?imwidth=1260",
+            "gender": "boy",
+            "qty_to_buy":0
+        },
+        
+        {
+            "item_id": 25,
+            "category_id": 4,
+            "item_title": "Appliqued Ballet Flats",
+            "description": "Ballet flats in coated fabric with a flower-appliqued, elastic foot strap.",
+            "color": "White",
+            "unit_price": 24.99,
+            "qty_in_stock": 1,
+            "thumbnail_img": "https://image.hm.com/assets/hm/6b/f5/6bf57880d029d7ec8158cfbe4028568a6c265b82.jpg?imwidth=1260",
+            "gender": "girl",
+            "qty_to_buy":0
+        },
+        
+        {
+            "item_id": 26,
+            "category_id": 4,
+            "item_title": "Scuba Sandals",
+            "description": "Sandals in scuba fabric.",
+            "color": "Pink",
+            "unit_price": 21.99,
+            "qty_in_stock": 1,
+            "thumbnail_img": "https://image.hm.com/assets/hm/ad/62/ad624bd8e9bcfeba9429aa28aee6bdea1621b7c8.jpg?imwidth=1260",
+            "gender": "girl",
+            "qty_to_buy":0
+        },
+        
+        {
+            "item_id": 27,
+            "category_id": 4,
+            "item_title": "Sneakers",
+            "description": "Sneakers with hook-loop tabs at front, padded edge and tongue, and a grosgrain loop at back.",
+            "color": "White",
+            "unit_price": 24.99,
+            "qty_in_stock": 1,
+            "thumbnail_img": "https://image.hm.com/assets/hm/e8/1b/e81b49432d5e4803ce513c8d0fee8ecd2477467e.jpg?imwidth=1260",
+            "gender": "girl",
+            "qty_to_buy":0
+        },
+        
+        {
+            "item_id": 28,
+            "category_id": 4,
+            "item_title": "Teddy snow boots",
+            "description": "Boots in soft teddy fleece and coated fabric.",
+            "color": "Beige",
+            "unit_price": 29.99,
+            "qty_in_stock": 1,
+            "thumbnail_img": "https://image.hm.com/assets/hm/7c/f7/7cf71d02215ffc6c06bc4aadbe8d8b2482f6463e.jpg?imwidth=1260",
+            "gender": "girl",
+            "qty_to_buy":0
+        },
+        
+        {
+            "item_id": 29,
+            "category_id": 4,
+            "item_title": "Sneakers",
+            "description": "Low-profile sneakers in mesh.",
+            "color": "Beige",
+            "unit_price": 24.99,
+            "qty_in_stock": 1,
+            "thumbnail_img": "https://image.hm.com/assets/hm/2d/92/2d92df430ff2eb42b07fabf0f259b4ce97de5ccb.jpg?imwidth=1260",
+            "gender": "boy",
+            "qty_to_buy":0
+        },
+        
+        {
+            "item_id": 30,
+            "category_id": 4,
+            "item_title": "Deck Shoes",
+            "description": "Deck shoes in napped fabric with a moccasin seam at front and lacing at top.",
+            "color": "Brown",
+            "unit_price": 24.99,
+            "qty_in_stock": 1,
+            "thumbnail_img": "https://image.hm.com/assets/hm/6e/c4/6ec41624360ef56d8ef9211cc71354100958666d.jpg?imwidth=1260",
+            "gender": "boy",
+            "qty_to_buy":0
+        },
+        
+        {
+            "item_id": 31,
+            "category_id": 4,
+            "item_title": "Fluffy Slippers",
+            "description": "Slippers in fluffy fabric.",
+            "color": "Beige",
+            "unit_price": 12.99,
+            "qty_in_stock": 1,
+            "thumbnail_img": "https://image.hm.com/assets/hm/40/fb/40fbbdfef99f26a5a16cc6d8ac52b4d64a6e97ff.jpg?imwidth=1260",
+            "gender": "boy",
+            "qty_to_buy":0
+        },
+        
+        {
+            "item_id": 32,
+            "category_id": 4,
+            "item_title": "Sandals",
+            "description": "Sandals in napped fabric.",
+            "color": "Grey",
+            "unit_price": 22.99,
+            "qty_in_stock": 1,
+            "thumbnail_img": "https://image.hm.com/assets/hm/f5/93/f59399e6b5fe1c74c09cb43500fd62c5e9f79736.jpg?imwidth=1260",
+            "gender": "boy",
+            "qty_to_buy":0
+        },
+        
+        {
+            "item_id": 33,
+            "category_id": 5,
+            "item_title": "Swimsuit UPF 50",
+            "description": "Textured swimsuit in UV-protective material.",
+            "color": "Multi",
+            "unit_price": 24.99,
+            "qty_in_stock": 1,
+            "thumbnail_img": "https://image.hm.com/assets/hm/5f/e7/5fe7318b6acd8c6e91227a21131d0f8ffd7060ac.jpg?imwidth=1260",
+            "gender": "girl",
+            "qty_to_buy":0
+        },
+        
+        {
+            "item_id": 34,
+            "category_id": 5,
+            "item_title": "Baby Poncho Towel",
+            "description": "Wrap your freshly bathed treasure in this cute animal poncho towel in soft cotton terry with velour at outer side.",
+            "color": "Pink",
+            "unit_price": 19.99,
+            "qty_in_stock": 1,
+            "thumbnail_img": "https://image.hm.com/assets/hm/00/f7/00f7105c52a346ee5d9052d95a9e2b0100ce9f64.jpg?imwidth=1260",
+            "gender": "girl",
+            "qty_to_buy":0
+        },
+        
+        {
+            "item_id": 35,
+            "category_id": 5,
+            "item_title": "Long-sleeved Swimsuit",
+            "description": "Structure-patterned, long-sleeved swimsuit.",
+            "color": "Blue",
+            "unit_price": 19.99,
+            "qty_in_stock": 1,
+            "thumbnail_img": "https://image.hm.com/assets/hm/aa/76/aa76195ab7f7e14fe77e84cd014bcc46db529dbf.jpg?imwidth=1260",
+            "gender": "girl",
+            "qty_to_buy":0
+        },
+        
+        {
+            "item_id": 36,
+            "category_id": 5,
+            "item_title": "Cotton Muslin Poncho Towel",
+            "description": "Poncho towel in soft, high-quality cotton muslin.",
+            "color": "Beige",
+            "unit_price": 12.99,
+            "qty_in_stock": 1,
+            "thumbnail_img": "https://image.hm.com/assets/hm/a8/97/a89703c215ac243554d70c76e17cdfe08005f03d.jpg?imwidth=1260",
+            "gender": "girl",
+            "qty_to_buy":0
+        },
+        
+        {
+            "item_id": 37,
+            "category_id": 5,
+            "item_title": "Patterned Swim Shorts",
+            "description": "Swim shorts with a printed pattern.",
+            "color": "Pink",
+            "unit_price": 14.99,
+            "qty_in_stock": 1,
+            "thumbnail_img": "https://image.hm.com/assets/hm/e2/e8/e2e8132080daf3edc8db7285b09c9c8df7e78022.jpg?imwidth=1260",
+            "gender": "boy",
+            "qty_to_buy":0
+        },
+        
+        {
+            "item_id": 38,
+            "category_id": 5,
+            "item_title": "UPF 50 Swim Jumpsuit",
+            "description": "Textured swim jumpsuit in UV-protective fabric.",
+            "color": "Blue",
+            "unit_price": 19.99,
+            "qty_in_stock": 1,
+            "thumbnail_img": "https://image.hm.com/assets/hm/7b/ca/7bca33e68808df11fd78f1011304db2ca99a1258.jpg?imwidth=1260",
+            "gender": "boy",
+            "qty_to_buy":0
+        },
+        
+        {
+            "item_id": 39,
+            "category_id": 5,
+            "item_title": "Patterned Swim Shorts",
+            "description": "Swim shorts with a printed pattern.",
+            "color": "Multi",
+            "unit_price": 14.99,
+            "qty_in_stock": 1,
+            "thumbnail_img": "https://image.hm.com/assets/hm/05/15/0515bcb54d8f434551f7bc4a01baf90c95b74d45.jpg?imwidth=2160",
+            "gender": "boy",
+            "qty_to_buy":0
+        },
+        
+        {
+            "item_id": 40,
+            "category_id": 5,
+            "item_title": "Baby Poncho Towel",
+            "description": "Poncho towel in soft cotton terry with velour at outer side. It is a charming and practical accessory for children. Made from 100% cotton terry, it features a soft velour outer side for added comfort. The towel is designed with a hood adorned with playful appliqués, bringing a fun touch to bath time. Its open sides are equipped with narrow ties, allowing for easy wearing and adjustment. This poncho towel is perfect for drying off after swimming or bath time, combining functionality with a whimsical design. Machine washable and tumble dryable, it offers convenience for busy parents. Priced at $29.99, it's available for purchase online at Canada.",
+            "color": "Green",
+            "unit_price": 19.99,
+            "qty_in_stock": 1,
+            "thumbnail_img": "https://image.hm.com/assets/hm/8a/1a/8a1a8e802bb53cccbd7b4d1896ce7acd2c04305c.jpg?imwidth=1260",
+            "gender": "boy",
+            "qty_to_buy":0
+        }
+    ]
+}
+
