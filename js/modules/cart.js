@@ -112,7 +112,7 @@ function loadCartItems() {
 			<td> 
 		<div class="cart-quantity">  
 			<button class="remove-button" id="remove-item-${cartItem["item_id"]}"> 
-				<img src="images/trash.svg" alt=""> 
+				<img src="images/dash.svg" alt=""> 
 			</button>
 			<input class="quantity" id="increment-item-value-${cartItem["item_id"]}" type="text" value="${cartItem["qty_to_buy"]}" size="1">
 			<button class="add-button" id="increment-item-btn-${cartItem["item_id"]}">
