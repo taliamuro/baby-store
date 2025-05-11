@@ -23,35 +23,28 @@ export function initProductDetails() {
  
     const link = document.getElementById("add-to-cart-link");  
  
-    let clicksCount = 0;
+    // let clicksCount = 0;
  
     link.addEventListener('click', ()=>{ 
     
+        const itemIdx = cartItems.findIndex(item => item.item_id === storedProduct.item_id);
+        
         //If the product is already added to the cart, just increase its quantity;    
-        if(clicksCount > 0) 
-        { 
-            /*
-            Class Notes:
-            const arr = [1, 2, 3, 4];
-            const index = arr.findIndex(x => x > 2);
-            console.log(index); // 2
-            */
-            
+        if(itemIdx >= 0) //Or != -1 
+        {             
             // Update the product's qtt to buy (item is already in the cart):
             //First, find the index, then update the item form the array using the index
-            const itemIdx = cartItems.findIndex(item => item.item_id === storedProduct.item_id);
+            // const itemIdx = cartItems.findIndex(item => item.item_id === storedProduct.item_id);
 
             cartItems[itemIdx].qty_to_buy += 1;
 
-            console.log("Quantity to buy: " + storedProduct.qty_to_buy);
- 
-            
+            console.log("Quantity to buy: " + storedProduct.qty_to_buy);   
         }
  
         else 
         {
             //Update the button click count
-            clicksCount++;
+            // clicksCount++;
 
             //Update the product's qtt to buy:
             storedProduct.qty_to_buy = 1;
@@ -65,11 +58,9 @@ export function initProductDetails() {
  
             //  Redirect user
             //  link.setAttribute("href", "cart.html");
- 
         }
 
         //After everything, update the cart in local storage:
         localStorage.setItem('cart-items', JSON.stringify(cartItems));
-
       });   
 }
