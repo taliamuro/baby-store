@@ -22,9 +22,7 @@ export function initProductDetails() {
         `; 
  
     const link = document.getElementById("add-to-cart-link");  
- 
-    // let clicksCount = 0;
- 
+  
     link.addEventListener('click', ()=>{ 
     
         const itemIdx = cartItems.findIndex(item => item.item_id === storedProduct.item_id);
@@ -43,9 +41,6 @@ export function initProductDetails() {
  
         else 
         {
-            //Update the button click count
-            // clicksCount++;
-
             //Update the product's qtt to buy:
             storedProduct.qty_to_buy = 1;
  

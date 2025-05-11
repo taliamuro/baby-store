@@ -3,7 +3,8 @@ export function initCart() {
 
 	loadCartItems();
 
-	// let cartItems = JSON.parse(localStorage.getItem('cart-items'));
+	let orders = JSON.parse(localStorage.getItem('orders'));
+	console.log("Orders size: " + orders.length);
 
 	const deleteItembtns = Array.from(document.getElementsByClassName('remove-button'));
 	
@@ -84,6 +85,17 @@ export function initCart() {
 
 		//Redirect to the order confirmation page:
 		if(canBuy) {
+			//First, add the order to the orders array
+			let orders =  JSON.parse(localStorage.getItem('orders'));
+			orders.push(cartItems);
+			localStorage.setItem('orders', JSON.stringify(orders));
+
+			//Then, clear the cart items
+			cartItems = [];
+
+			localStorage.setItem('cart-items', JSON.stringify(cartItems));
+
+			//Then, redirect to the order confirmation
 			placeOrderLink.setAttribute("href", "order-confirmation.html");
 		} else {
 			console.log("can't buy");

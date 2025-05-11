@@ -14,12 +14,14 @@ import { initRemoteAPIListingTalia } from "./modules/remoteAPIListingTalia.js";
 // Ensure that the document is fully loaded and parsed
 document.addEventListener('DOMContentLoaded', initApp);
 
-// let cartItems = [];
-// localStorage.setItem('cart-items', JSON.stringify(cartItems));   //this resets everything always
-
-//Initialise the cart items array if not initialized as an empty array
-if (localStorage.getItem('cart-items') === null) {
+//Initialise the cart items array as an empty array if not initialized yet
+if (localStorage.getItem('cart-items') == null) {
     localStorage.setItem('cart-items', JSON.stringify([]));
+}
+
+//Initialize orders array if not initialized
+if (localStorage.getItem('orders') == null) {
+    localStorage.setItem('orders', JSON.stringify([]));
 }
 
 function initApp() {
