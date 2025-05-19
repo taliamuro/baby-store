@@ -42,8 +42,9 @@ export function parseProducts(products) {
         const itemId = product.item_id;
 
         card.innerHTML = `
-            <img src="${product["thumbnail_img"] || 'https://via.placeholder.com/300x200'}" alt="${product["item-title"]}" height="250" width="190">
-            <a class="listing-title-link" id="${product["item_id"]}">${product["item_title"]}</a>
+            <img src="${product["thumbnail_img"] || 'https://via.placeholder.com/300x200'}" alt="${product["item_title"]}" height="250" width="190">
+            <br>
+            <a class="listing-title-link" id="${product["item_id"]}">${product["item_title"].length > 20 ? product["item_title"].substring(0,20) + '...' : product["item_title"]}</a>
             <p>$${product["unit_price"]}</p>
         `;
 
