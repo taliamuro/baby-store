@@ -27,7 +27,7 @@ export function parseProducts(products) {
         const imageSrc = "images/placeholder-image.jpeg";//Adding placeholder image
         
         card.innerHTML = `
-            <img src="${product.images[0] || 'https://via.placeholder.com/300x200'}" alt="${product.title}" height="350">
+            <img src="${product.images[0] || 'https://via.placeholder.com/300x200'}" alt="${product.title}">
             <h5 class="listing-description-preview">${product["title"].length > 20 ? product.title.substring(0,30) + '...' : product.title}</h5>
         `;
 

@@ -78,7 +78,7 @@ export function initCart() {
 		placeOrderLink.style.opacity = 0.5;
 	} else {
 		placeOrderLink.classList.remove('disabled');
-		placeOrderLink.style.pointerEvents = "none";
+		placeOrderLink.style.pointerEvents = "auto";
 		placeOrderLink.style.opacity = 1;
 	}
 
@@ -96,16 +96,16 @@ export function initCart() {
 		//Redirect to the order confirmation page:
 		if(canBuy) {
 			//First, add the order to the orders array
-			let orders =  JSON.parse(localStorage.getItem('orders'));
+			let orders =  JSON.parse(localStorage.getItem('orders')) || [];
 			orders.push(cartItems);
 			localStorage.setItem('orders', JSON.stringify(orders));
 
-			//Then, clear the cart items
-			cartItems = [];
+			// save current order to confirmed-order
+			localStorage.setItem('confirmed-order', JSON.stringify(cartItems));
 
-			localStorage.setItem('cart-items', JSON.stringify(cartItems));
+			// clear the cart
+			localStorage.setItem('cart-items', JSON.stringify([]));
 
-			//Then, redirect to the order confirmation
 			placeOrderLink.setAttribute("href", "order-confirmation.html");
 		} else {
 			console.log("can't buy");
