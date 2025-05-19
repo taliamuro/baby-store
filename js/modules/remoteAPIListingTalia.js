@@ -18,7 +18,7 @@ export async function fetchProductsfromAPI() {
 
 export function parseProducts(products) {
     console.log(products);
-    const container = document.getElementById("product-container");
+    const container = document.getElementById("product-container-talia");
     
     products.forEach((product) => {
         const card = document.createElement("div");//add a section
