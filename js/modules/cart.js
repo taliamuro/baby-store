@@ -25,6 +25,8 @@ export function initCart() {
 				{
 					cartItems[itemIdx].qty_to_buy -= 1;
 					localStorage.setItem('cart-items', JSON.stringify(cartItems));
+					updateOrderSummary(cartItems);
+					document.getElementById(`increment-item-value-${itemId}`).value = cartItems[itemIdx].qty_to_buy;
 				} 
 
 				//Else, remove the item from the cart listing:
@@ -33,7 +35,8 @@ export function initCart() {
 				//Set the new array without the item to delete
 				const newCartItems = cartItems.filter(item => item.item_id != itemId);
 				localStorage.setItem('cart-items', JSON.stringify(newCartItems));
-
+				updateOrderSummary(newCartItems);
+				initCart();
 				}
 
 				//Clear the products from the page
@@ -43,6 +46,7 @@ export function initCart() {
 				//Reload the products in the page with updates
 				initCart();
 			});
+			updateOrderSummary(JSON.parse(localStorage.getItem('cart-items')));
 	});
 	
 	const plusButtons = Array.from(document.getElementsByClassName('add-button'));
@@ -59,18 +63,24 @@ export function initCart() {
 
 			cartItems[itemIdx].qty_to_buy += 1;
 			localStorage.setItem('cart-items', JSON.stringify(cartItems));	
-			
-			//Clear the products from the page
-			const container = document.getElementById("ordered-products-table");
-			container.innerHTML = ``;
-			
-			//Reload the products in the page with updates
-			initCart();
+			updateOrderSummary(cartItems);
+			document.getElementById(`increment-item-value-${itemId}`).value = cartItems[itemIdx].qty_to_buy;
 		});
 	});
 
 	//href="order-confirmation.html"
 	const placeOrderLink = document.getElementById('place-order-link');
+	const cart = JSON.parse(localStorage.getItem('cart-items')) || [];
+
+	if (cart.length === 0) {
+		placeOrderLink.classList.add('disabled');
+		placeOrderLink.style.pointerEvents = "none";
+		placeOrderLink.style.opacity = 0.5;
+	} else {
+		placeOrderLink.classList.remove('disabled');
+		placeOrderLink.style.pointerEvents = "none";
+		placeOrderLink.style.opacity = 1;
+	}
 
 	placeOrderLink.addEventListener('click', () => {
 		let cartItems = JSON.parse(localStorage.getItem('cart-items'));
@@ -101,6 +111,8 @@ export function initCart() {
 			console.log("can't buy");
 		}
 	});
+
+	updateOrderSummary(JSON.parse(localStorage.getItem('cart-items')));
 } 
 
 function loadCartItems() {
@@ -110,30 +122,48 @@ function loadCartItems() {
 
 	cartItems.forEach(cartItem => {
 		container.innerHTML += `
-		<tr>
-			<td>
-		<img src="${cartItem["thumbnail_img"]}" height="220" width="145" class="featured-items">
-			</td>
-			<td>
-		<div class="cart-description">
-			<p><b>${cartItem["item_title"]}</b></p>
-			<p>Size</p> 
-			<p>Price: $${cartItem["unit_price"]}</p>
-		</div>
-			</td>
-			<td> 
-		<div class="cart-quantity">  
-			<button class="remove-button" id="remove-item-${cartItem["item_id"]}"> 
-				<img src="images/dash.svg" alt=""> 
-			</button>
-			<input class="quantity" id="increment-item-value-${cartItem["item_id"]}" type="text" value="${cartItem["qty_to_buy"]}" size="1">
-			<button class="add-button" id="increment-item-btn-${cartItem["item_id"]}">
-				<img src="images/plus.svg" alt="">
-			</button>
-		</div>
-			</td>
-		</tr>
-	`;
-	}); 
+			<tr>
+				<td>
+			<img src="${cartItem["thumbnail_img"]}" height="220" width="145" class="featured-items">
+				</td>
+				<td>
+			<div class="cart-description">
+				<p><b>${cartItem["item_title"]}</b></p>
+				<p>Size</p> 
+				<p>Price: $${cartItem["unit_price"]}</p>
+			</div>
+				</td>
+				<td> 
+			<div class="cart-quantity">  
+				<button class="remove-button" id="remove-item-${cartItem["item_id"]}"> 
+					<img src="images/dash.svg" alt=""> 
+				</button>
+				<input class="quantity" id="increment-item-value-${cartItem["item_id"]}" type="text" value="${cartItem["qty_to_buy"]}" size="1">
+				<button class="add-button" id="increment-item-btn-${cartItem["item_id"]}">
+					<img src="images/plus.svg" alt="">
+				</button>
+			</div>
+				</td>
+			</tr>
+		`;
+	});
+	
 	console.log("Cart Size: " + cartItems.length); 
+}
+
+export function updateOrderSummary(cartItems) {
+	let subtotal = 0;
+	
+	cartItems.forEach(item => {
+		subtotal += item["unit_price"] * item.qty_to_buy;
+	});
+
+	// Calculate 15% tax
+	let tax = subtotal * 0.15;
+	// Add the tax to the subtotal
+	let total = subtotal + tax;
+
+	document.getElementById("subtotal").textContent = `$${subtotal.toFixed(2)}`;
+	document.getElementById("tax").textContent = `$${tax.toFixed(2)}`;
+	document.getElementById("total").textContent = `$${total.toFixed(2)}`;
 }
