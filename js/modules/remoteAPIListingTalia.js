@@ -28,7 +28,7 @@ export function parseProducts(products) {
         
         card.innerHTML = `
             <img src="${product.images[0] || 'https://via.placeholder.com/300x200'}" alt="${product.title}" height="350">
-            <h5><a class="listing-description-preview" id="${product["id"]}">${product["title"]}</a></h5>
+            <h5 class="listing-description-preview">${product["title"].length > 20 ? product.title.substring(0,30) + '...' : product.title}</h5>
         `;
 
         container.appendChild(card);
