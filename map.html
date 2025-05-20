@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-page="map">
+<html lang="en" data-page="map" data-theme="dark">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,8 +20,7 @@
         }
      </style>
 </head>
-  <body>
-
+  <body id="body">
     <header>
         <div id="logo">Useful Locations</div>
     </header>
@@ -43,6 +42,17 @@
                         </form></div>
                     </li>                <li><a href="cart.html"><img src="images/cart.svg" alt="Shopping Cart"></a></li>
                     <li><a href="login.html"><img src="images/person-circle.svg" alt="Login"></a></li>
+                    <li>
+                  <div class="dropdown">
+                    <button class="nav-button" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      &#9788;
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#" id="btn-light">Light</a></li>
+                      <li><a class="dropdown-item" href="#" id="btn-dark">Dark</a></li>
+                    </ul>
+                  </div>
+                </li>
                 </ul>
             </nav>
         </div>

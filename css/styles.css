@@ -9,6 +9,8 @@
     --tm-nav-btn-bg-color: #5c715e;
     --tm-bg-color: white;
     --tm-font-color: black;
+    --tm-shadow: #00000033;
+    --tm-shadow-hover: #0000007c;
 }
 
 :root[data-theme="dark"] {
@@ -18,6 +20,8 @@
     --tm-nav-btn-bg-color: #809c83;
     --tm-bg-color: #131814;
     --tm-font-color: white;
+    --tm-shadow: #c5c5c533;
+    --tm-shadow-hover: #ffffff;
 }
 
 body {
@@ -25,9 +29,14 @@ body {
     background-color: var(--tm-bg-color);
 }
 
+#body {
+    background-color: var(--tm-bg-color);
+}
+
 /* General Formatting of all Pages */
 .page-content {
     margin: var(--tm-page-margin);
+    color: var(--tm-font-color);
 }
 
 #logo {
@@ -96,7 +105,7 @@ li {
 
 footer {
     background-color: var(--tm-nav-bg-color);
-    /* margin: 0px 30px 50px 30px; */
+    padding: 40px 0px;
     display: flex;
     justify-content: center;
 }
@@ -259,7 +268,7 @@ iframe{
 .product-card {
     background-color: white;
     border-radius: 10px;
-    box-shadow: 3px 3px 3px #00000033;
+    box-shadow: 3px 3px 3px var(--tm-shadow);
     color: black;
     text-align: center;
     padding: 10px;
@@ -267,7 +276,7 @@ iframe{
 }
 
 .product-card:hover {
-    box-shadow: 3px 3px 10px #00000060;
+    box-shadow: 3px 3px 10px var(--tm-shadow-hover);
 }
 
 #product-container {
