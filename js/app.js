@@ -26,6 +26,14 @@ if (localStorage.getItem('orders') == null) {
 
 function initApp() {
     console.log("Initializing the app...");
+    document.addEventListener("DOMContentLoaded", () => {
+        if (localStorage.getItem("data-theme") === "light") {
+            document.documentElement.setAttribute('data-theme', 'light');
+        }
+        else if (localStorage.getItem("data-theme") === "dark") {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        }
+    });
     switchTheme();
     
     // Which page the user is visiting
@@ -69,11 +77,13 @@ function initApp() {
         const darkBtn = document.getElementById("btn-dark");
 
         lightBtn.addEventListener('click', () => {
-            document.documentElement.setAttribute('data-theme', 'light')
+            document.documentElement.setAttribute('data-theme', 'light');
+            localStorage.setItem("data-theme", "light");
         });
 
         darkBtn.addEventListener('click', () => {
-            document.documentElement.setAttribute('data-theme', 'dark')
+            document.documentElement.setAttribute('data-theme', 'dark');
+            localStorage.setItem("data-theme", "dark");
         });
     }
 }
