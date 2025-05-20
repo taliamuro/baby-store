@@ -58,7 +58,7 @@ function initApp() {
         case "remote-api-listing":
             initRemoteAPIListing();
         case "remote-api-listing-talia":
-            initRemoteAPIListingTalia();
+            initRemoteAPIListingTalia();        
         default:
             break;
     }
