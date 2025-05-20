@@ -334,5 +334,9 @@ iframe{
     box-shadow: 0 8px 10px rgba(2, 48, 10, 0.5);
 }
 
+.holiday-card:hover {
+    scale: 1.12;
+}
+
 /*Mariam API end*/
 
