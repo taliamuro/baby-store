@@ -117,6 +117,7 @@ export function initCart() {
 
 function loadCartItems() {
 	let cartItems = JSON.parse(localStorage.getItem('cart-items'));
+	
 
     const container = document.getElementById("ordered-products-table");
 

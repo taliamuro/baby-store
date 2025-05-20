@@ -25,7 +25,7 @@ export function initProductDetails() {
   
     link.addEventListener('click', ()=>{ 
     
-        const itemIdx = cartItems.findIndex(item => item.item_id === storedProduct.item_id);
+        let itemIdx = cartItems.findIndex(item => item.item_id === storedProduct.item_id);
         
         //If the product is already added to the cart, just increase its quantity;    
         if(itemIdx >= 0) //Or != -1 
@@ -33,18 +33,8 @@ export function initProductDetails() {
             // Update the product's qtt to buy (item is already in the cart):
             //First, find the index, then update the item form the array using the index
             // const itemIdx = cartItems.findIndex(item => item.item_id === storedProduct.item_id);
-
+            console.log(itemIdx);
             cartItems[itemIdx].qty_to_buy += 1;
-
-            console.log("Quantity to buy: " + storedProduct.qty_to_buy);
-
-            const addToCartAlert = document.getElementById("add-to-cart-alert");
-            addToCartAlert.innerHTML = `
-                <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                    <strong>Item has been successfully added to cart!</strong>
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                </div>
-            `
         }
  
         else 
@@ -52,16 +42,19 @@ export function initProductDetails() {
             //Update the product's qtt to buy:
             storedProduct.qty_to_buy = 1;
  
-            console.log("Quantity to buy: " + storedProduct.qty_to_buy);
- 
             // Store product in cart as a cart item:
             cartItems.push(storedProduct);
- 
-            console.log("Cart products: " + cartItems.length);
- 
-            //  Redirect user
-            //  link.setAttribute("href", "cart.html");
-        }
+
+            itemIdx = cartItems.findIndex(item => item.item_id === storedProduct.item_id);
+         }
+
+        const addToCartAlert = document.getElementById("add-to-cart-alert");
+        addToCartAlert.innerHTML = `
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>Item has been successfully added to cart! (${cartItems[itemIdx]["qty_to_buy"]}x)</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        `;
 
         //After everything, update the cart in local storage:
         localStorage.setItem('cart-items', JSON.stringify(cartItems));
