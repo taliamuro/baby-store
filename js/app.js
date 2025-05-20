@@ -26,14 +26,16 @@ if (localStorage.getItem('orders') == null) {
 
 function initApp() {
     console.log("Initializing the app...");
-    document.addEventListener("DOMContentLoaded", () => {
-        if (localStorage.getItem("data-theme") === "light") {
-            document.documentElement.setAttribute('data-theme', 'light');
-        }
-        else if (localStorage.getItem("data-theme") === "dark") {
-            document.documentElement.setAttribute('data-theme', 'dark');
-        }
-    });
+
+    const theme = localStorage.getItem('data-theme');
+
+    if (theme === "light") {
+        document.documentElement.setAttribute('data-theme', 'light');
+    }
+    else if (theme === "dark") {
+        document.documentElement.setAttribute('data-theme', 'dark');
+    }
+    
     switchTheme();
     
     // Which page the user is visiting
