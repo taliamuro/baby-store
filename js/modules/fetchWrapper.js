@@ -10,8 +10,7 @@ export async function fetchData(resourceUri) {
         }
 
         // 3. Retrieve the received payload from the response message
-        const data = await response.json();
-        return data;
+        return await response.json();
         // 4. Parse and render the HTML table
     } catch (error) {
         console.log("Problem ocurred.... :(");

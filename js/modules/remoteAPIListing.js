@@ -1,34 +1,30 @@
 import { fetchData } from "./fetchWrapper.js";
 
 export function initRemoteAPIListing(params) {
-    fetchProductsfromAPI();
+    fetchFromAPI();
 }
 
-export async function fetchProductsfromAPI() {
-    console.log("Fetching products from API...");
+export async function fetchFromAPI() {
     try {
-        const uri = "https://api.escuelajs.co/api/v1/products";
-        const products = await fetchData(uri);
-        parseProducts(products);
+        const uri = "https://date.nager.at/api/v3/PublicHolidays/2024/CH";
+        const cats = await fetchData(uri);
+        parseProducts(cats);
     } catch (error) {
         console.error("Error loading products: ", error);
     }
 }
 
-export function parseProducts(products) {
-    console.log(products);
-    const container = document.getElementById("product-container");
-    
-    products.forEach((product, index) => {
-        const card = document.createElement("div");//add a section
-        card.className = "product-card";//We need a class name to style it
-        
-        const imageSrc = "images/placeholder-image.jpeg";//Adding placeholder image
-        
+export function parseProducts(holidays) {
+    const container = document.getElementById("holiday-container");
+
+    holidays.forEach((holiday) => {
+        const card = document.createElement("div");
+        card.className = "holiday-card";
+
         card.innerHTML = `
-            <img src="${product.images[1] || 'https://via.placeholder.com/300x200'}" alt="${product.title}" height="350">
-            <h5><a class="listing-description-preview" href="product-details.html?id=${index}">${product.title.length > 20 ? product.title.substring(0,20) + '...' : product.title}</h5>
-            <p>$${product.price}</p>
+            <h3>${holiday.name}</h3>
+            <p><strong>Date:<u></strong> ${holiday.date}</u></p>
+            <p>Local Name: <em>${holiday.localName}</em></p>
         `;
 
         container.appendChild(card);
