@@ -11,6 +11,7 @@
     --tm-font-color: black;
     --tm-shadow: #00000033;
     --tm-shadow-hover: #0000007c;
+    --tm-black-white: black;
 }
 
 :root[data-theme="dark"] {
@@ -22,6 +23,7 @@
     --tm-font-color: white;
     --tm-shadow: #c5c5c533;
     --tm-shadow-hover: #ffffff;
+    --tm-black-white: white;
 }
 
 body {
@@ -113,6 +115,12 @@ footer {
 .footer-item {
     padding: 10px 50px;
     text-align: left;
+    color: var(--tm-black-white);
+    text-decoration: none;
+}
+
+.footer-item:hover {
+    text-decoration:underline;
 }
 
 #featured-images {
