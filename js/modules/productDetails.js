@@ -36,7 +36,15 @@ export function initProductDetails() {
 
             cartItems[itemIdx].qty_to_buy += 1;
 
-            console.log("Quantity to buy: " + storedProduct.qty_to_buy);   
+            console.log("Quantity to buy: " + storedProduct.qty_to_buy);
+
+            const addToCartAlert = document.getElementById("add-to-cart-alert");
+            addToCartAlert.innerHTML = `
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <strong>Item has been successfully added to cart!</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            `
         }
  
         else 
