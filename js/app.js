@@ -63,5 +63,3 @@ function initApp() {
             break;
     }
 }
-
-fetch("https://api.escuelajs.co/api/v1/products")

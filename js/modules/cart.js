@@ -101,10 +101,10 @@ export function initCart() {
 			localStorage.setItem('orders', JSON.stringify(orders));
 
 			// save current order to confirmed-order
-			localStorage.setItem('confirmed-order', JSON.stringify(cartItems));
+			localStorage.setItem('confirmed-order', JSON.stringify([cartItems]));
 
-			// clear the cart
-			localStorage.setItem('cart-items', JSON.stringify([]));
+			cartItems = [];
+			localStorage.setItem('cart-items', JSON.stringify(cartItems));
 
 			placeOrderLink.setAttribute("href", "order-confirmation.html");
 		} else {
