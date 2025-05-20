@@ -1,13 +1,28 @@
 :root {
     --tm-page-margin: 50px 100px;
+}
+
+:root[data-theme="light"] {
     --tm-nav-bg-color: #b6cdbd;
     --tm-current-page-btn-bg-color: #809c83;
     --tm-current-page-btn-font-color: #2b342d;
     --tm-nav-btn-bg-color: #5c715e;
+    --tm-bg-color: white;
+    --tm-font-color: black;
+}
+
+:root[data-theme="dark"] {
+    --tm-nav-bg-color: #495e4f;
+    --tm-current-page-btn-bg-color: #dde9de;
+    --tm-current-page-btn-font-color: #2b342d;
+    --tm-nav-btn-bg-color: #809c83;
+    --tm-bg-color: #131814;
+    --tm-font-color: white;
 }
 
 body {
     font-family: Helvetica, Arial, sans-serif;
+    background-color: var(--tm-bg-color);
 }
 
 /* General Formatting of all Pages */
@@ -36,7 +51,7 @@ nav ul li {
 
 #nav-bar {
     text-align: center;
-    margin: 0px 50px 50px 50px;
+    /* margin: 0px 30px 50px 30px; */
 }
 
 li {
@@ -80,8 +95,8 @@ li {
 }
 
 footer {
-    background-color: #c9dfcf;
-    margin: 50px;
+    background-color: var(--tm-nav-bg-color);
+    /* margin: 0px 30px 50px 30px; */
     display: flex;
     justify-content: center;
 }
