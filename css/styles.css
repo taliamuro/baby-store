@@ -80,6 +80,7 @@ li {
 }
 
 footer {
+    background-color: #c9dfcf;
     margin: 50px;
     display: flex;
     justify-content: center;
@@ -357,8 +358,29 @@ iframe{
 
 /*Youtube ref : https://www.youtube.com/watch?v=McPdzhLRzCg*/
 /* Carousel End */
+
 /*Bootstrap Carousel Format Begin*/
-carousel-item {
-    
+  /* #carouselAutoplaying {
+    height: 25vh;
+  }*/
+
+.carousel {
+  height: 25vh;
+  overflow: hidden;
 }
+
+.carousel-item {
+  height: 100%;
+}
+
+.carousel-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain; 
+  scale: 50%;
+}
+
+
 /*Bootstrap Carousel Format End*/
+
+
