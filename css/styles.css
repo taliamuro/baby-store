@@ -364,11 +364,8 @@ iframe{
     height: 25vh;
   }*/
 
-.carousel {
-  height: 25vh;
-  overflow: hidden;
-}
 
+/*
 .carousel-item {
   height: 100%;
 }
@@ -378,8 +375,58 @@ iframe{
   width: 100%;
   object-fit: contain; 
   scale: 50%;
+} */
+
+ /* .carousel {
+  height: 25vh;
+  overflow: hidden;
 }
 
+.carousel-inner img {
+  width: 35%;
+  height: auto;
+} */
+
+/* .carousel-wrapper {
+    
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+}
+.carousel-inner img {
+  width: 40%; 
+
+}
+
+.carousel-item {
+    overflow: hidden;
+    object-position: center;
+    justify-content: center;
+    align-items: center;
+} */
+
+/* .carousel-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+} */
+
+.carousel {
+  width: fit-content;
+}
+
+.carousel-inner img {
+  width: 40%;
+  display: block;
+  margin: auto;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #697a6b;
+}
 
 /*Bootstrap Carousel Format End*/
 
