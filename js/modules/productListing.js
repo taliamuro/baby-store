@@ -31,14 +31,23 @@ function search() {
     const searchBtn = document.getElementById('search-btn');
     const searchInput = document.getElementById('search-input');
 
+    console.log("Search button: ", searchBtn);
+    console.log("Search input: ", searchInput);
+
     if (searchBtn && searchInput) {
-        searchBtn.addEventListener('click', () => {
+        searchBtn.addEventListener('click', (event) => {
+            event.preventDefault();
+            
             const input = searchInput.value.trim().toLowerCase();
+            console.log("Searching for: ", input);
             const results = allProducts.filter(p =>
                 p.item_title.toLowerCase().includes(input)
             );
             parseProducts(results);
         });
+    }
+    else {
+        console.log("Search input or button not found in DOM");
     }
 }
 
