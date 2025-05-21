@@ -36,10 +36,10 @@
                     <li><a href="remote-api-listing-talia.html" class="nav-button">Talia</a></li>
                     <li><a href="remote-api-listing.html" class="nav-button">Mariam</a></li>
                     <li><div class="container-fluid">
-                        <form class="d-flex" role="search">
+                        <!-- <form class="d-flex" role="search">
                           <input id="search-input" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                           <button id="search-btn" class="nav-button" type="submit">Search</button>
-                        </form></div>
+                        </form></div> -->
                     </li>                <li><a href="cart.html"><img src="images/cart.svg" alt="Shopping Cart"></a></li>
                     <li><a href="login.html"><img src="images/person-circle.svg" alt="Login"></a></li>
                     <li>
@@ -57,16 +57,18 @@
             </nav>
         </div>
 
-    <!-- <h1>Leaflet Map!</h1> -->
-
     <div class="container" id="page-content">
         <div class="row">
             <!-- first column where the list of places will be rendered -->
-            <div class="col-2">
-                <p>Nearby Metro Stations</p>
+            <div class="col-4">
+                <h4>Related Places Nearby</h4>
+
+                <ul id="places-list">
+                  
+                </ul>
             </div>
             <!-- second column where the map will be rendered -->
-            <div class="col-10" id="leaflet-map"> <!-- total 12 cols-->
+            <div class="col-8" id="leaflet-map"> <!-- total 12 cols-->
                 <p>Places in Laval</p>
             </div>
         </div>

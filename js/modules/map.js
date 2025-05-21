@@ -5,8 +5,8 @@ import {fetchData} from "./fetchWrapper.js";
 export async function initMapView() {
     console.log("Initializing the map");
 
-    //1) instantiate the leaflet map, then set the initial view to your city
-    const map = L.map('leaflet-map').setView([45.508888, -73.561668], 12);//latitiude, longetude then zoom level
+    //1) instantiate the leaflet map, then set the initial view
+    const map = L.map('leaflet-map').setView([45.50602373900276, -73.6670893859262], 10);//latitiude, longetude then zoom level
 
     //2) Set the map layer:
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -45,8 +45,14 @@ export async function initMapView() {
 
 async function renderPlaces(map) {
     const locations = await fetchData("data/places.json");
+    const listContainer = document.getElementById("places-list");
 
     locations.places.forEach(place => {
+
+    //places list:
+    const item = document.createElement("li");
+    item.textContent = place.name;
+    listContainer.appendChild(item);
 
     //Markers:
     const marker = L.marker(place.point.coordinates).addTo(map);
@@ -74,5 +80,11 @@ async function renderPlaces(map) {
         });
     
         L.marker(place.point.coordinates, {icon: customMarker}).addTo(map);
+
+        //when a name of place is clicked
+        item.addEventListener("click", () => {
+            marker.openPopup();
+            map.setView([45.50602373900276, -73.6670893859262], 10); //reset view if the user has scrolled far
+        });
 });
 }

@@ -45,6 +45,94 @@
     "coordinates": [45.54730718861041, -73.63811868552652]
     },
     "categoryId": 2
+    },
+        {
+    "name": "Place Vertu",
+    "description": "Mall with retailers and eateries",
+    "point": {
+    "coordinates": [45.50706477768848, -73.70519052550578]
+    },
+    "categoryId": 1
+    },
+        {
+    "name": "CF Carrefour Laval",
+    "description": "Visit our store branch in Laval",
+    "point": {
+    "coordinates": [45.570319018777255, -73.75170754491079]
+    },
+    "categoryId": 1
+    },
+        {
+    "name": "Plaza Pointe-Clare",
+    "description": "Diverse offerings at large shopping malls",
+    "point": {
+    "coordinates": [45.45005533605645, -73.82370356893053]
+    },
+    "categoryId": 1
+    },
+        {
+    "name": "Complexe Desjardins",
+    "description": "Indoor mall with stores and eateries",
+    "point": {
+    "coordinates": [45.51658130144581, -73.56231343343548]
+    },
+    "categoryId": 1
+    },
+        {
+    "name": "Galeries d'Anjou",
+    "description": "Large mall with familiar chain store",
+    "point": {
+    "coordinates": [45.60888328922259, -73.56231343343548]
+    },
+    "categoryId": 1
+    },
+        {
+    "name": "Montmorency",
+    "description": "Near Montmorency college",
+    "point": {
+    "coordinates": [45.563649606389916, -73.72419023914144]
+    },
+    "categoryId": 2
+    },
+        {
+    "name": "Verdun",
+    "description": "Subway Station",
+    "point": {
+    "coordinates": [45.46264153621135, -73.56739110590136]
+    },
+    "categoryId": 2
+    },
+        {
+    "name": "Cote Vertu",
+    "description": "near Vanier college",
+    "point": {
+    "coordinates": [45.52075782482942, -73.6832526541831]
+    },
+    "categoryId": 2
+    },
+        {
+    "name": "Place d'Armes",
+    "description": "Do you like to go downtown",
+    "point": {
+    "coordinates": [45.51245272088582, -73.55545136997175]
+    },
+    "categoryId": 2
+    },
+        {
+    "name": "Cadillac",
+    "description": "Subway Station",
+    "point": {
+    "coordinates": [45.58608813550877, -73.55134465555614]
+    },
+    "categoryId": 2
+    },
+        {
+    "name": "Dorion",
+    "description": "Train station",
+    "point": {
+    "coordinates": [45.400309869043056, -74.01099690601878]
+    },
+    "categoryId": 2
     }
     ]
 }
