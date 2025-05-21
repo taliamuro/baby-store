@@ -5,19 +5,14 @@ export function initProductListing() {
     // fetchProductsfromAPI();
 }
 
-export async function fetchProductsfromCatalog() {
-    // console.log("Fetching products from catalog...");
-    
+export async function fetchProductsfromCatalog() {    
     try {
         const response = await fetch('data/catalog.json');
         const data = await response.json();
         
-        // console.log("Fetched data:", data);
-
-        const products = data.products;
-
-        // console.log("Fetched products:", products);
-        
+        const products = data.products;  
+                // Save the list of products in storage
+        localStorage.setItem('all-products', JSON.stringify(products));      
 
         if (Array.isArray(products)) {
             parseProducts(products);
@@ -25,6 +20,7 @@ export async function fetchProductsfromCatalog() {
             throw new TypeError("products is not an array.");
             
         }
+    
     } catch (error) {
         console.error("Error loading products: ", error);
     }

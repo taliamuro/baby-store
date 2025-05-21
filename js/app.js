@@ -1,7 +1,7 @@
 // Importing ES Modules:
 import {initCart} from "./modules/cart.js";
 import {initContact} from "./modules/contact.js";
-import {initHome} from "./modules/home.js";
+import {initHome, handleSearch} from "./modules/home.js";
 import {initLogin} from "./modules/login.js";
 import {initOrderConfirmation} from "./modules/orderConfirmation.js";
 import {initProductDetails} from "./modules/productDetails.js";
@@ -10,6 +10,8 @@ import {fetchData} from "./modules/fetchWrapper.js";
 import {initRemoteAPIListing} from "./modules/remoteAPIListing.js";
 import { initMapView } from "./modules/map.js";
 import { initRemoteAPIListingTalia } from "./modules/remoteAPIListingTalia.js";
+
+// handleSearch();
 
 // Ensure that the document is fully loaded and parsed
 document.addEventListener('DOMContentLoaded', initApp);

@@ -1,5 +1,8 @@
 // ES Module for implementing the product details logic
 
+/* 
+This function handles the product update 
+*/
 export function initProductDetails() {
 
     let cartItems = JSON.parse(localStorage.getItem('cart-items')); 
