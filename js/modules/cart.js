@@ -95,6 +95,13 @@ export function initCart() {
 
 		//Redirect to the order confirmation page:
 		if(canBuy) {
+			//Update the stock
+			cartItems.forEach(item => {
+				console.log("Stock before: " + item.qty_in_stock);
+				item.qty_in_stock -= item.qty_to_buy;
+				console.log("Stock before: " + item.qty_in_stock);
+			});
+
 			//First, add the order to the orders array
 			let orders =  JSON.parse(localStorage.getItem('orders')) || [];
 			orders.push(cartItems);
