@@ -41,7 +41,9 @@ function search() {
             const input = searchInput.value.trim().toLowerCase();
             console.log("Searching for: ", input);
             const results = allProducts.filter(p =>
-                p.item_title.toLowerCase().includes(input)
+                p.item_title.toLowerCase().includes(input) ||
+                p.description.toLowerCase().includes(input) ||
+                (p.category && p.category.category_name && p.category.category_name.toLowerCase().includes(input))
             );
             parseProducts(results);
         });
@@ -79,6 +81,11 @@ export function parseProducts(products) {
                 <p>$${product["unit_price"]}</p>
             </div>
         `;
+
+        card.addEventListener('click', () => {
+            localStorage.setItem('clickedProduct', JSON.stringify(product));
+            window.location.href = "product-details.html"
+        })
 
         container.appendChild(card);
         // const link = document.getElementById(itemId);
