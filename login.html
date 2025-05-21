@@ -46,10 +46,10 @@
 
     <div id="create-account-login" class="page-content">
         <!-- Create an account section -->
-        <div class="login">
+        <div class="login" id="validation-alert-messages">
             <h3>Create Account</h3>
             <hr>
-            <form action="server-endpoint" method="POST">
+            <form action="server-endpoint" method="POST" id="form-validation">
                 <table>
                     <tr>
                         <td class="login-label">
@@ -101,7 +101,7 @@
                     </tr>
                     <tr>
                         <td colspan="2" class="sign-up-button">
-                            <input type="button" value="Sign Up">
+                            <input type="button" value="Sign Up" id="sign-up-btn">
                         </td>
                     </tr>
                 </table>
@@ -131,7 +131,7 @@
                     </tr>
                     <tr>
                         <td colspan="2" class="sign-up-button">
-                            <input type="button" value="Login">
+                            <input type="button" value="Login" id="login-btn">
                         </td>
                     </tr>
                 </table>
