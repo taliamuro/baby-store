@@ -2,14 +2,8 @@
 
 export function initOrderConfirmation() 
 {
+    fireConfetti();
     console.log("initOrderConfirmation loading...");
-	
-    document.addEventListener("DOMContentLoaded", () => {
-        if (localStorage.getItem("show-confetti") === "true") {
-            fireConfetti();
-            localStorage.removeItem("show-confetti");
-        }
-    });
 }
 
 function fireConfetti() {
