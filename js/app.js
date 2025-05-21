@@ -28,6 +28,17 @@ if (localStorage.getItem('orders') == null) {
 
 function initApp() {
     console.log("Initializing the app...");
+
+    const theme = localStorage.getItem('data-theme');
+
+    if (theme === "light") {
+        document.documentElement.setAttribute('data-theme', 'light');
+    }
+    else if (theme === "dark") {
+        document.documentElement.setAttribute('data-theme', 'dark');
+    }
+    
+    switchTheme();
     
     // Which page the user is visiting
     const page = document.querySelector("[data-page]").dataset.page;
@@ -63,5 +74,20 @@ function initApp() {
             initRemoteAPIListingTalia();        
         default:
             break;
+    }
+
+    function switchTheme() {
+        const lightBtn = document.getElementById("btn-light");
+        const darkBtn = document.getElementById("btn-dark");
+
+        lightBtn.addEventListener('click', () => {
+            document.documentElement.setAttribute('data-theme', 'light');
+            localStorage.setItem("data-theme", "light");
+        });
+
+        darkBtn.addEventListener('click', () => {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            localStorage.setItem("data-theme", "dark");
+        });
     }
 }

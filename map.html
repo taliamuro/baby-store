@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-page="map">
+<html lang="en" data-page="map" data-theme="light">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,8 +20,7 @@
         }
      </style>
 </head>
-  <body>
-
+  <body id="body">
     <header>
         <div id="logo">Useful Locations</div>
     </header>
@@ -30,7 +29,7 @@
         <div id="nav-bar">
             <nav id="nav">
                 <ul>
-                    <li><a href="home.html" class="nav-button">Home</a></li>
+                    <li><a href="index.html" class="nav-button">Home</a></li>
                     <li><a href="contact.html" class="nav-button">Contact</a></li>
                     <li><a href="product-listing.html" class="nav-button">Products</a></li>
                     <li><a href="map.html" class="nav-button" id="current-page">Map</a></li>
@@ -38,18 +37,29 @@
                     <li><a href="remote-api-listing.html" class="nav-button">Mariam</a></li>
                     <li><div class="container-fluid">
                         <form class="d-flex" role="search">
-                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                          <button class="nav-button" type="submit">Search</button>
+                          <input id="search-input" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                          <button id="search-btn" class="nav-button" type="submit">Search</button>
                         </form></div>
                     </li>                <li><a href="cart.html"><img src="images/cart.svg" alt="Shopping Cart"></a></li>
                     <li><a href="login.html"><img src="images/person-circle.svg" alt="Login"></a></li>
+                    <li>
+                  <div class="dropdown">
+                    <button class="nav-button" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      &#9788;
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#" id="btn-light">Light</a></li>
+                      <li><a class="dropdown-item" href="#" id="btn-dark">Dark</a></li>
+                    </ul>
+                  </div>
+                </li>
                 </ul>
             </nav>
         </div>
 
     <!-- <h1>Leaflet Map!</h1> -->
 
-    <div class="container">
+    <div class="container" id="page-content">
         <div class="row">
             <!-- first column where the list of places will be rendered -->
             <div class="col-2">
@@ -61,6 +71,23 @@
             </div>
         </div>
     </div>
+
+    <footer>
+      <hr>
+      <br>
+      <table>
+          <tr>
+              <td><a href="product-listing.html" class="footer-item">Products</a></td>
+              <td><a href="contact.html" class="footer-item">Contact</a></td>
+              <td><a href="login.html" class="footer-item">Create an Account</a></td>
+          </tr>
+          <tr>
+              <td><a href="cart.html" class="footer-item">Cart</a></td>
+              <td><a href="index.html" class="footer-item">About Us</a></td>
+              <td><a href="login.html"  class="footer-item">Login</a></td>
+          </tr>
+      </table>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
     

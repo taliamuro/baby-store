@@ -117,6 +117,8 @@ export function initCart() {
 		} else {
 			console.log("can't buy");
 		}
+
+		localStorage.setItem("show-confetti", "true");
 	});
 
 	updateOrderSummary(JSON.parse(localStorage.getItem('cart-items')));

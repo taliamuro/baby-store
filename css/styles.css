@@ -1,18 +1,44 @@
 :root {
     --tm-page-margin: 50px 100px;
+}
+
+:root[data-theme="light"] {
     --tm-nav-bg-color: #b6cdbd;
     --tm-current-page-btn-bg-color: #809c83;
     --tm-current-page-btn-font-color: #2b342d;
     --tm-nav-btn-bg-color: #5c715e;
+    --tm-bg-color: white;
+    --tm-font-color: black;
+    --tm-shadow: #00000033;
+    --tm-shadow-hover: #0000007c;
+    --tm-black-white: black;
+}
+
+:root[data-theme="dark"] {
+    --tm-nav-bg-color: #495e4f;
+    --tm-current-page-btn-bg-color: #dde9de;
+    --tm-current-page-btn-font-color: #2b342d;
+    --tm-nav-btn-bg-color: #809c83;
+    --tm-bg-color: #131814;
+    --tm-font-color: white;
+    --tm-shadow: #c5c5c533;
+    --tm-shadow-hover: #ffffff;
+    --tm-black-white: white;
 }
 
 body {
     font-family: Helvetica, Arial, sans-serif;
+    background-color: var(--tm-bg-color);
+}
+
+#body {
+    background-color: var(--tm-bg-color);
 }
 
 /* General Formatting of all Pages */
 .page-content {
     margin: var(--tm-page-margin);
+    color: var(--tm-font-color);
 }
 
 #logo {
@@ -36,7 +62,7 @@ nav ul li {
 
 #nav-bar {
     text-align: center;
-    margin: 0px 50px 50px 50px;
+    /* margin: 0px 30px 50px 30px; */
 }
 
 li {
@@ -80,8 +106,8 @@ li {
 }
 
 footer {
-    background-color: #c9dfcf;
-    margin: 50px;
+    background-color: var(--tm-nav-bg-color);
+    padding: 40px 0px;
     display: flex;
     justify-content: center;
 }
@@ -89,6 +115,12 @@ footer {
 .footer-item {
     padding: 10px 50px;
     text-align: left;
+    color: var(--tm-black-white);
+    text-decoration: none;
+}
+
+.footer-item:hover {
+    text-decoration:underline;
 }
 
 #featured-images {
@@ -244,7 +276,7 @@ iframe{
 .product-card {
     background-color: white;
     border-radius: 10px;
-    box-shadow: 3px 3px 3px #00000033;
+    box-shadow: 3px 3px 3px var(--tm-shadow);
     color: black;
     text-align: center;
     padding: 10px;
@@ -252,7 +284,7 @@ iframe{
 }
 
 .product-card:hover {
-    box-shadow: 3px 3px 10px #00000060;
+    box-shadow: 3px 3px 10px var(--tm-shadow-hover);
 }
 
 #product-container {
