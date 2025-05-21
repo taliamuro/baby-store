@@ -40,9 +40,50 @@ function search() {
             
             const input = searchInput.value.trim().toLowerCase();
             console.log("Searching for: ", input);
-            const results = allProducts.filter(p =>
-                p.item_title.toLowerCase().includes(input)
-            );
+
+            //display everything if there is no input
+            if (!input) {
+                parseProducts(allProducts);
+                return;
+            }
+
+            let results = [];
+
+            //Search by gender
+            if (input === "boy" || input === "girl") {
+                results = allProducts.filter(p => p.gender.toLowerCase() === input);
+            }
+
+
+
+            //If no result, search by category
+            if (results.length == 0) {
+
+                //To know the id based on the name of teh category (IDs 1-5)
+                const categoriesRef = [undefined, "clothing", "outerwear", "accessories", "shoes", "swimwear"];
+
+                //Search by category
+                let categoryId = -1; //just initializing
+                for (let i = 1; i < categoriesRef.length; i++) {
+                    if (categoriesRef[i].includes(input)) {
+                        categoryId = i;
+                        break;
+                    }
+                }
+
+                //if we found a category:
+                if (categoryId !== -1) {
+                    results = allProducts.filter(product => product.category_id === categoryId);
+                }
+            }
+
+            //If we still found nothing, search item titles:
+            if (results.length == 0) {
+                results = allProducts.filter(p =>
+                p.item_title.toLowerCase().includes(input));
+            }
+
+            //Display result
             parseProducts(results);
         });
     }
@@ -53,6 +94,7 @@ function search() {
 
 export function parseProducts(products) {
     const container = document.getElementById("product-container");
+
     // Clear previous listings
     container.innerHTML = "";
 
