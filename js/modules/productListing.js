@@ -83,6 +83,13 @@ function search() {
                 p.item_title.toLowerCase().includes(input));
             }
 
+            //if no result is found, search descriptions
+            if (results.length == 0) {
+                    results = allProducts.filter(p =>
+                    p.description.toLowerCase().includes(input)
+                );
+            }
+
             //Display result
             parseProducts(results);
         });
@@ -121,6 +128,11 @@ export function parseProducts(products) {
                 <p>$${product["unit_price"]}</p>
             </div>
         `;
+
+        card.addEventListener('click', () => {
+            localStorage.setItem('clickedProduct', JSON.stringify(product));
+            window.location.href = "product-details.html"
+        })
 
         container.appendChild(card);
         // const link = document.getElementById(itemId);
