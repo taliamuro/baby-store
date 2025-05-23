@@ -12,6 +12,8 @@
     --tm-shadow: #00000033;
     --tm-shadow-hover: #0000007c;
     --tm-black-white: black;
+    --tm-li-hover: #b6cdbd;
+    --tm-card-bg: #f1f5f2;
 }
 
 :root[data-theme="dark"] {
@@ -24,16 +26,20 @@
     --tm-shadow: #c5c5c533;
     --tm-shadow-hover: #ffffff;
     --tm-black-white: white;
+    --tm-li-hover: #475a4d;
+    --tm-card-bg: #404e43;
 }
 
 body {
     font-family: Helvetica, Arial, sans-serif;
     background-color: var(--tm-bg-color);
+    color: var(--tm-font-color);
 }
 
 #body {
     background-color: var(--tm-bg-color);
 }
+
 
 /* General Formatting of all Pages */
 .page-content {
@@ -63,6 +69,9 @@ nav ul li {
 #nav-bar {
     text-align: center;
     /* margin: 0px 30px 50px 30px; */
+}
+.col-4{
+    color: var(--tm-font-color);
 }
 
 li {
@@ -274,7 +283,7 @@ iframe{
 }
 
 .product-card {
-    background-color: white;
+    background-color: var(--tm-card-bg);
     border-radius: 10px;
     box-shadow: 3px 3px 3px var(--tm-shadow);
     color: black;
@@ -337,7 +346,7 @@ iframe{
 }
 
 .carousel-inner img {
-  width: 40%;
+  width: 20%;
   display: block;
   margin: auto;
 }
@@ -362,7 +371,7 @@ iframe{
     border: 1px solid #ccccccbb;
     border-radius: 8px;
     padding: 16px;
-    background-color: #f1f5f2;
+    background-color: var(--tm-card-bg);
     box-shadow: 0 8px 10px rgba(2, 48, 10, 0.5);
 }
 
@@ -371,4 +380,12 @@ iframe{
 }
 
 /*Mariam API end*/
+li:hover {
+    background-color: var(--tm-li-hover);
+}
+
+li{
+color: var(--tm-black-white);
+}
+
 
