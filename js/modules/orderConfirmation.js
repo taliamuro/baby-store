@@ -6,6 +6,9 @@ export function initOrderConfirmation()
     console.log("initOrderConfirmation loading...");
 }
 
+/**
+ * 
+ */
 function fireConfetti() {
     const defaults = {
         spread: 360,

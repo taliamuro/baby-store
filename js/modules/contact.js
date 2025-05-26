@@ -21,7 +21,7 @@ function validateForm() {
     console.log(messageToSend);
 
     //Use RegEx to do input validation
-    const regExEmail = /^.+\@{1}[a-zA-Z0-9-]+\.[a-zA-Z]{2,}$/;//TODO: make this more robust
+    const regExEmail = /^([a-zA-Z0-9.$#'!*%&+/=?^_`|{}~-]+)@([a-zA-Z0-9-]+)(\.[a-zA-Z0-9-]+)*$/;//TODO: make this more robust
 
     if (email == null || !regExEmail.test(email)) {
         showAlert("Please enter a valid email code (e.g.: name@example.com)", 'danger');
@@ -35,9 +35,6 @@ function validateForm() {
     {
         return true;
     }
-    // else {
-    //     showAlert("Your information is correct :)", 'success')
-    // }
 }    
 
 function showAlert(msg, type) {

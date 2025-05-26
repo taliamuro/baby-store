@@ -43,6 +43,7 @@ export async function initMapView() {
 //     });
 }
 
+
 async function renderPlaces(map) {
     const locations = await fetchData("data/places.json");
     const listContainer = document.getElementById("places-list");
